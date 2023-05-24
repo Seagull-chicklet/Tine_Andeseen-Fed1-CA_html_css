@@ -1,11 +1,17 @@
-html,body {
-    margin: 0;
-    padding: 0;
-}
+html{
+    font-family:
+           margin: 0;
+         padding: 0;
+        }
 img {
     width: 100%;
 }
 header{
-   background-image: url('../images/bergen-home.jpg'); 
+   image-rendering: auto; 
    min-height: 100%;
+}
+h1{
+    font-family: unicaone;
+    font-size: large;
+    font-style: bold;
 }
