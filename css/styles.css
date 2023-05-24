@@ -4,4 +4,11 @@ nav {
     background-attachment: scroll;
     color: black;
 }
-.backgroud-image,{ background: image url("..//Users/tineandersen/Documents/GitHub/Tine_Andeseen-Fed1-CA_html_css/images/bergen-home.jpg");}
+body{ 
+    background: image url("../images/bergen-home.jpg");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image:-webkit-linear-gradient("../images/bergen-home.jpg")
+
+}
