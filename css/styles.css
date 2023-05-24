@@ -1,14 +1,9 @@
-header{ 
-    background-image: image("../images/bergen-home.jpg");
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    object-position: top; 
+nav{
+    background-image: url('/Users/tineandersen/Documents/GitHub/Tine_Andeseen-Fed1-CA_html_css/images/rainyday pages-header.jpg');
 }
-h1{
-    
-    font-size: larger;
-}
-h3{
-    background-image: image("../images/rainyday pages-header.jpg");
+header{
+    background-image: url('/Users/tineandersen/Documents/GitHub/Tine_Andeseen-Fed1-CA_html_css/images/bergen-home.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 400px;
 }
