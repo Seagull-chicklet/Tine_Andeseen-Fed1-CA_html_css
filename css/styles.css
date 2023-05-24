@@ -1,18 +1,11 @@
-nav {
-    background-color: whitesmoke;
-    background-size: cover;
-    background-attachment: scroll;
-    color: black;
-}
-body{ 
-    background: image url("../images/bergen-home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 200px;
-    height: 100vh;
-    background-image:-webkit-linear-gradient("../images/bergen-home.jpg")
-}
-* {
+html,body {
     margin: 0;
     padding: 0;
+}
+img {
+    width: 100%;
+}
+header{
+   background-image: url('../images/bergen-home.jpg'); 
+   min-height: 100%;
 }
