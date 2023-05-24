@@ -6,9 +6,9 @@ nav {
 }
 body{ 
     background: image url("../images/bergen-home.jpg");
-    background-position: 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
+    width: 200px;
+    height: 100vh;
     background-image:-webkit-linear-gradient("../images/bergen-home.jpg")
-
 }
