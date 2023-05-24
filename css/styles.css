@@ -1,3 +1,11 @@
-head {background-color: whitesmoke;
-color: black;
+.header {
+    background-color: whitesmoke;
+    color: black;
+}
+.backgroud-image {
+   background-image: url(".//Users/tineandersen/Documents/GitHub/Tine_Andeseen-Fed1-CA_html_css/images/bergen-home.jpg"); 
+background-size: contain;
+background-repeat: no-repeat;
+   width: 300px;
+height: 300px;
 }
