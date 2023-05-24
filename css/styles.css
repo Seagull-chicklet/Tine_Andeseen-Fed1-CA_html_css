@@ -7,8 +7,12 @@ nav {
 body{ 
     background: image url("../images/bergen-home.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 200px;
     height: 100vh;
     background-image:-webkit-linear-gradient("../images/bergen-home.jpg")
+}
+* {
+    margin: 0;
+    padding: 0;
 }
