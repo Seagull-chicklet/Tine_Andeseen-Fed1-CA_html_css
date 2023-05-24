@@ -1,4 +1,6 @@
-header{ height: 300px;
+header{ 
+    background-image: image("../images/bergen-home.jpg");
+    height: 300px;
     width: 300px;
     object-fit: cover;
     object-position: top; 
@@ -6,4 +8,7 @@ header{ height: 300px;
 h1{
     
     font-size: larger;
+}
+h3{
+    background-image: image("../images/rainyday pages-header.jpg");
 }
