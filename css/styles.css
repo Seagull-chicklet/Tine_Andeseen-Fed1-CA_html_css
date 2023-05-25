@@ -1,9 +1,24 @@
-nav{
-    background-image: url('/Users/tineandersen/Documents/GitHub/Tine_Andeseen-Fed1-CA_html_css/images/rainyday pages-header.jpg');
+nav{ font-family: 'Unica One','Ubuntu','Sans-serif';
+     font-size: medium; 
+    background-color: whitesmoke;
+    background-position: top;
 }
 header{
     background-image: url('/Users/tineandersen/Documents/GitHub/Tine_Andeseen-Fed1-CA_html_css/images/bergen-home.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 min-height: 400px;
+}
+h1{
+    font-family: 'Unica One','Ubuntu','Sans-serif';
+    color: white;
+    font-size: larger;
+
+}
+h2{
+    font-family: 'Unica One','Ubuntu','Sans-serif';
+    font-size: large;
+    color: black;
+    background-color: whitesmoke;
+    background-position: bottom;
 }
