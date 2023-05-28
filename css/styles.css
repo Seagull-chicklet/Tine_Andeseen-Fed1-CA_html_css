@@ -6,8 +6,12 @@
      background-color: #D3E3E3;
      background:#D3E3E3;
      color:black;
+     margin-right: 10px;
+     margin-left: 10px;
     background-position:center;
-    padding:50px 814px 20px 100px;
+    padding-right: 814px;
+    padding-left: 100px;
+    padding-inline: 50px;
     position:fixed;
     scroll-behavior: auto;
 }
@@ -32,12 +36,6 @@
     transform: translate(-50%, -50%);
   }
   
-nav a{
-    position: fixed;
-    display:contents;
-    padding-right: 100px;
-    margin-right: 100px;
-}
 .cta{
     background-color: transparent;
     color: #1c232d;
