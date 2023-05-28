@@ -1,15 +1,17 @@
 /* homepage*/
-.header{ font-family: 'Unica One','Ubuntu','Sans-serif';
-     font-size: medium; 
+.header{ 
+    font-family: 'Unica One','Ubuntu','Sans-serif';
+     font-size: 40px; 
      text-decoration: none;
      background-color: #D3E3E3;
      background:#D3E3E3;
      color:black;
-     image-rendering: auto;
-    background-position: top;
-    padding-top: 20px;
-    padding-bottom: 20px
+    background-position:center;
+    padding:50px 814px 20px 100px;
+    position:fixed;
+    scroll-behavior: auto;
 }
+
 .bergen-home{
     background-image: url(../images/bergen-home.jpg);
     min-height: 950px;
@@ -29,25 +31,18 @@
     left: 40%;
     transform: translate(-50%, -50%);
   }
-  .container-top{
-    position: absolute;
-  text-align: left;
-  color:whitesmoke;
-}
-.top-right {
-    position: absolute;
-    top: 30px;
-    right: 16px;
-  }
+  
 nav a{
     position: fixed;
     display:contents;
     padding-right: 100px;
+    margin-right: 100px;
 }
 .cta{
     background-color: transparent;
     color: #1c232d;
     text-decoration: none;
+    
 }
 h1{
     font-family: 'Unica One','Ubuntu','Sans-serif';
@@ -64,27 +59,35 @@ h1{
     color:#D3E3E3;
   }
   .bottom-left {
-    position: absolute;
-    bottom: 0px;
-    
+    position:relative;
 }
 h2{
     font-family: 'Unica One','Ubuntu','Sans-serif';
     font-size: 50px;
     text-decoration: underline;
-    color: black;
-    background-color: #D3E3E3;
+    color:#1c232d;
+    background-color:transparent;
     padding-bottom: 80px;
     padding-top: 20px;
-b
     background-size: cover;
 }
 h3{font-family: 'Ubuntu','Sans-serif';
     font-size: medium;
     background-image:url("../images/rainyday\ pages-header.jpg");
+    background-size: cover;
     padding-top: 20px;
     padding-bottom: 20px;
+    
 }
 p{
     font-family: 'Ubuntu','Sans-serif';
+}
+.product-list{
+    font-family: 'Unicaone','ubuntu','sans-serif';
+    font-size: 80px;
+    text-decoration: none;
+    color: #1c232d;
+    image-rendering: block;
+    
+
 }
