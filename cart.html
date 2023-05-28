@@ -14,31 +14,39 @@
 <body>
     <header>
         <li><a href="index.html">Home</a></li><p>Cart
-        </p></header>
+        </p>
+    </header>
+    <fieldset>
         <img src="../images/lightweight-woman.png" alt="grey lightweight jacket for running and exercise fitted for woman">
         <p>product description</p>
         <button>size</button>
-        <p>price</p>
+        <p>NOK</p>
     <button>+</button><button>-</button>
     <p>total:    price nok</p>
+</fieldset>
+    <fieldset>
     <p>checkout</p>
-    <form>
+    <form action="form-success.php" method="post" >
         <p>Name</p>
-        <input class="Name" type="text">
+        <input class="Name" type="text" name="full name">
    <p>Adress</p>
-        <input class="Adress"type="text">
+        <input class="Adress"type="text" name="Full Adress">
         <P>E-mail</P>
-        <input class="e-mail" type="text">
+        <input class="e-mail" type="text" name="e-mail adress">
         <p>Card number</p>
-        <input class="Card number" type="text"> 
+        <input class="Card number" type="text" name="XXXX XXXX XXXX XXXX"> 
         <p>Expire date</p>
-        <input class="Expire date" type="text">
+        <input class="Expire date" type="text" name="XX/XX">
         <p>CVC</p>
-        <input  class="CVC" type="text">
+        <input  class="CVC" type="text" name="XXX">
     </form>
-    <input type="checkbox"> <input type="checkbox">
-    <p>
+    <label for="visa">Visa</label>
+    <input type="radio" id="visa" name="payment_method" value="visa"> 
+    <label for="vipps">Vipps</label>
+    <input type="radio" id="vipps" name="payment_method" value="vipps">
+</fieldset>
+    <div>
     <button>submit</button>
-</p>
+    </div>
 </body>
 </html>

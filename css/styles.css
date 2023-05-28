@@ -1,24 +1,90 @@
-nav{ font-family: 'Unica One','Ubuntu','Sans-serif';
+/* homepage*/
+.header{ font-family: 'Unica One','Ubuntu','Sans-serif';
      font-size: medium; 
-    background-color: whitesmoke;
+     text-decoration: none;
+     background-color: #D3E3E3;
+     background:#D3E3E3;
+     color:black;
+     image-rendering: auto;
     background-position: top;
+    padding-top: 20px;
+    padding-bottom: 20px
 }
-header{
-    background-image: url('/Users/tineandersen/Documents/GitHub/Tine_Andeseen-Fed1-CA_html_css/images/bergen-home.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-min-height: 400px;
+.bergen-home{
+    background-image: url(../images/bergen-home.jpg);
+    min-height: 950px;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    position: relative;
+  text-align: center;
+  color: white;
+}
+  .centered {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .container-top{
+    position: absolute;
+  text-align: left;
+  color:whitesmoke;
+}
+.top-right {
+    position: absolute;
+    top: 30px;
+    right: 16px;
+  }
+nav a{
+    position: fixed;
+    display:contents;
+    padding-right: 100px;
+}
+.cta{
+    background-color: transparent;
+    color: #1c232d;
+    text-decoration: none;
 }
 h1{
     font-family: 'Unica One','Ubuntu','Sans-serif';
-    color: white;
-    font-size: larger;
-
+   font-size: 100px;
+   letter-spacing: 20px;
+   padding-top: 200px;
+   position:relative;
+   color: whitesmoke;
+   background-color: transparent;
+}
+.container-bottom {
+    position: relative;
+    text-align: center;
+    color:#D3E3E3;
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 0px;
+    
 }
 h2{
     font-family: 'Unica One','Ubuntu','Sans-serif';
-    font-size: large;
+    font-size: 50px;
+    text-decoration: underline;
     color: black;
-    background-color: whitesmoke;
-    background-position: bottom;
+    background-color: #D3E3E3;
+    padding-bottom: 80px;
+    padding-top: 20px;
+b
+    background-size: cover;
+}
+h3{font-family: 'Ubuntu','Sans-serif';
+    font-size: medium;
+    background-image:url("../images/rainyday\ pages-header.jpg");
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+p{
+    font-family: 'Ubuntu','Sans-serif';
 }
