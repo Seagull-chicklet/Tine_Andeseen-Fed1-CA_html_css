@@ -1,23 +1,34 @@
-/* homepage*/
-body{
-    font-family: 'Ubuntu',sans-serif;
+
+@font-face {
+    font-family: 'UnicaOne','Ubuntu';
+    src: url(../fonts/UnicaOne-Regular.ttf/../Ubuntu-Regular.ttf );
+
 }
+body{
+    margin: 0;
+    font-family: 'UnicaOne','Ubuntu','Sans-serif';
+    overflow: hidden;/* Hidescrollbars */
+}
+/* Homepage */
 .header{ 
     font-family: 'Unica One','Ubuntu','Sans-serif';
      font-size: 40px; 
+     text-align: center;
      text-decoration: none;
      background:(#D3E3E3);
      background:-webkit-linear-gradient(90deg,rgba(227,227,227,0) 0%,rgba(211,227,227,1) 35%, rgba(211,227,227,1) 100%);
+     background-size: cover;
      color:#1c232d;
      width: 100%;
-    padding:10px 10px 10px 140px;
-    border-top: 50px;
+    padding:10px 10px 10px 10px;
+    border-top: 20px;
     border-bottom: 150px;
     position:fixed;
     top:0;
     z-index: 1;
     
 }
+
 .fa-cart-shopping{
     background-color: transparent;
     color: #1c232d;
@@ -26,8 +37,7 @@ body{
     padding:20px 20px 20px 20px ;
     display: inline-block;
     display:-webkit-inline-box;
-    zoom:1;
-    width: 16.666%
+  
 }
 
 .bergen-home{
@@ -46,30 +56,40 @@ body{
 }
   .centered {
     position: absolute;
-    top: 25%;
+    top: 45%;
     left: 40%;
     transform: translate(-50%, -50%);
   }
   
-.cta{
+.cta-button{
+    font-size: 40px;
     background-color: transparent;
     color: #1c232d;
     text-decoration: none;
     text-align: center;
     display: inline-block;
+    padding: 10px 10px 10px 10px;
+    margin-right: 60px;
+    margin-left: 60px;
     display:-webkit-inline-box;
-    zoom:1;
-    width: 16.666%
-
-    
+   
+}
+a:hover{
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+    border-color: #053541;
+    background-color:#053541;
+    color: whitesmoke;
+    text-align: center;
 }
 h1{
     font-family: 'Unica One','Ubuntu','Sans-serif';
-   font-size: 100px;
+   font-size: 150px;
+   font-weight: 200;
    letter-spacing: 20px;
-   padding-top: 200px;
-   position:relative;
-   left:0%;
+   position:center;
+   top: 400x;
+   left:80px;
    color: whitesmoke;
    background-color: transparent;
    z-index: 0;
@@ -83,18 +103,24 @@ h1{
   .bottom-left{
     position:absolute;
     background-color: #D3E3E3;
-    top:20%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+    background:-webkit-linear-gradient(90deg,rgba(227,227,227,1) 0%,rgba(211,227,227,1) 35%, rgba(211,227,227,0) 100%);
+    background-size: cover;
+    bottom: 0px;
+    left:0%;
+   
   }
 h2{
     font-family: 'Unica One','Ubuntu','Sans-serif';
     font-size: 50px;
     text-decoration: underline;
     color:#1c232d;
-    padding-bottom: 80px;
-    padding-top: 20px;
+    position:relative;
     background-size: cover;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    width: 1426px;
+    bottom: 0;
+    z-index: index 1;
 }
 h3{font-family: 'Ubuntu','Sans-serif';
     font-size: 40px;
@@ -106,7 +132,7 @@ h3{font-family: 'Ubuntu','Sans-serif';
     padding-bottom: 20px;  
 }
 p{
-    font-family: 'Ubuntu','Sans-serif';
+    font-family: 'UnicaOne','Ubuntu','Sans-serif';
     font-size: 40px;
     padding-left: 10px;
     padding-right: 10px;
@@ -116,43 +142,50 @@ p{
 
 }
 .topic{
+    font-family: 'UnicaOne','Ubuntu','Sans-serif';
     margin-bottom: 5%;
     padding-left: 70px;
 }
 /*jackets*/
 .happy-menu{
-    width:max-content;
-    height:max-content;
+    border-radius: 8px;
+    width: 700px;
+    background-position-y: bottom;
+    height: 1150px;
+
+}
+nav li{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    position:relative;
 }
 .product-list{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 10px;
     font-family: 'UnicaOne','ubuntu','sans-serif';
-    font-size: 40px;
-    text-decoration: underline;
+    font-size: 60px;
+    text-decoration: none;
     color: #1c232d;
-    text-align:left;
-    image-rendering:inherit
-    width: fit-content;
-    max-height:fit-content;
+    width: auto;
+    height:auto;
 }
-.lightweight-woman{
-    max-height: 30%;
-    max-width: 30%;
+
+
+.product-list-img{
+    
+    float: right;
+    max-height: 0%;
+    max-width: 20%;
+   
 }
-.motorcycle{
-    max-height: 30%;
-    max-width: 30%;
-}
-.casual{
-    max-height: 30%;
-    max-width: 30%;
-}
-.midlayer{
-    max-height: 30%;
-    max-width: 30%;   
-}
-.umbrella{
-    max-height: 25%;
-    max-width: 25%;  
+hr{
+
+    border: 3px solid lightgrey;
+  
+    
 }
 /*about*/
 .item{
@@ -162,4 +195,32 @@ p{
 }
 .floated{
     float: right;
+}
+
+.sailor{
+    border-radius: 8px;
+    width: 700px;
+    height:fit-content 
+}
+/*Contact*/
+.contact{
+    float: right;
+    height:fit-content;
+    width: 700px;
+    border-radius: 8px;
+}
+h3 *{
+    display:flex;
+    align-items: center;
+    background-position: 30% 5%;
+}
+.cta-button{
+    text-align: left;
+}
+.icon{
+    font-size: 100px;
+    color:black;
+    display: flexbox;
+    flex-direction:inherit;
+    padding: 20px;
 }
