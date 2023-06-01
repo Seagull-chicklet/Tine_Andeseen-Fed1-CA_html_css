@@ -220,9 +220,8 @@ hr{
 }
 
 /*about*/
-section{
-    display: flex;
-}
+
+
 .about-wrapper{
     display:flex;
     justify-content: space-between;
