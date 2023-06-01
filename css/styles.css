@@ -41,22 +41,23 @@ body{
 }
 
 .bergen-home{
+    
     background-image: url(../images/bergen-home.jpg);
-    min-height: 950px;
-    background-position-x: right;
-    background-position-y: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    height: 100%;
 }
+
 .container {
     position: relative;
    text-align: center;
   color: white;
-  
 }
   .centered {
     position: absolute;
-    top: 45%;
+    top: 30%;
     left: 40%;
     transform: translate(-50%, -50%);
   }
@@ -72,8 +73,8 @@ body{
     margin-right: 60px;
     margin-left: 60px;
     display:-webkit-inline-box;
-   
 }
+
 a:hover{
     padding: 10px 10px 10px 10px;
     border-radius: 8px;
@@ -82,8 +83,9 @@ a:hover{
     color: whitesmoke;
     text-align: center;
 }
+
 h1{
-    font-family: 'Unica One','Ubuntu','Sans-serif';
+   font-family: 'Unica One','Ubuntu','Sans-serif';
    font-size: 150px;
    font-weight: 200;
    letter-spacing: 20px;
@@ -95,132 +97,154 @@ h1{
    z-index: 0;
    
 }
-.container{
+.container2{
     position: relative;
     text-align: center;
-    color:#d6dfdf;
 }
-  .bottom-left{
-    position:absolute;
-    background-color: #D3E3E3;
-    background:-webkit-linear-gradient(90deg,rgba(227,227,227,1) 0%,rgba(211,227,227,1) 35%, rgba(211,227,227,0) 100%);
-    background-size: cover;
+.bottom-left{
+    width: 1200px;
+    position: absolute;
+    margin:auto;
     bottom: 0px;
-    left:0%;
-   
-  }
-h2{
+
+    transform: translate(-50%, -50%);
+
+    
+}
+
+h2{ 
+    display: flex;
     font-family: 'Unica One','Ubuntu','Sans-serif';
     font-size: 50px;
+    background-color: #D3E3E3;
+    background:-webkit-linear-gradient(90deg,rgba(227,227,227,1) 0%,rgba(211,227,227,1) 35%, rgba(211,227,227,0) 100%);
+    background-blend-mode: lighten;
     text-decoration: underline;
     color:#1c232d;
-    position:relative;
     background-size: cover;
     padding-bottom: 20px;
-    padding-top: 50px;
-    width: 1426px;
-    bottom: 0;
+    padding-top: 100px;
+    border-top: 20px;
+    margin-bottom: 0px;
+    width: 100%;
     z-index: index 1;
+    opacity: 0,6;
 }
-h3{font-family: 'Ubuntu','Sans-serif';
+
+h3{
+    display: flex;
+    font-family: 'Ubuntu','Sans-serif';
     font-size: 40px;
     background-image:url("../images/rainyday\ pages-header.jpg");
     background-size:cover;
     background-position:50% 30%;
     padding-left: 50%;
     padding-top: 20px;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
+    margin-top: 0px; 
+    text-align: center;
 }
+
 p{
     font-family: 'UnicaOne','Ubuntu','Sans-serif';
     font-size: 40px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 5%;
-
 }
+
 .topic{
     font-family: 'UnicaOne','Ubuntu','Sans-serif';
     margin-bottom: 5%;
     padding-left: 70px;
 }
-/*jackets*/
-.happy-menu{
-    border-radius: 8px;
-    width: 700px;
-    background-position-y: bottom;
-    height: 1150px;
 
+/*jackets*/
+
+.jackets-wrapper {
+    display:flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
-nav li{
+.jacket {
+display: flex;
+align-items: end;
+}
+
+img{
+    width: 100%;
+}
+.jackets-image{
     display: flex;
     flex-direction: column;
-    align-items:left;
-    position:relative;
-}
-.product-list{
-    display:flex;
-    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50px;
     align-items: center;
-    column-gap: 10px;
-    font-family: 'UnicaOne','ubuntu','sans-serif';
-    font-size: 60px;
-    text-decoration: none;
-    color: #1c232d;
-    width: auto;
-    height:auto;
-}
-
-
-.product-list-img{
+    padding-left: 200px;
+    border-left: 50px;
     
-    float: right;
-    max-height: 0%;
-    max-width: 20%;
+}
+.jacket a{
+    color: #1c232d;
+    display: flex;
+    font-size: 2rem;
+    text-decoration: none;
+    align-self: center;
+    text-transform: uppercase;
    
 }
-hr{
-
-    border: 3px solid lightgrey;
-  
-    
-}
-/*about*/
-.item{
-    margin: 10px;
-    max-width: fit-content;
-    padding: 10px;
-}
-.floated{
-    float: right;
-}
-
-.sailor{
+a:hover{
+    padding: 10px 10px 10px 10px;
     border-radius: 8px;
-    width: 700px;
-    height:fit-content 
+    border-color: #053541;
+    background-color:#053541;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+@media(max-width:380px){
+    .jacket,.jackets-list{
+        flex-direction: column;
+    }
+}
+
+
+hr{
+    
+    border: 3px solid lightgrey; 
+
+}
+
+/*about*/
+section{
+    display: flex;
+}
+.about-wrapper{
+    display:flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.sailor-image{
+    width:100%;
+    height:100%;
+    flex-direction:column;
+    max-width: 50px;
+    padding-left: 200px;
+    border-left: 50px;
+}
+.about{
+    width: 100%;
+    height: 100%;
+    flex-direction:column;
+    max-width: 50px;
+    padding-left: 200px;
+    border-left: 50px;
+
 }
 /*Contact*/
-.contact{
-    float: right;
-    height:fit-content;
-    width: 700px;
-    border-radius: 8px;
-}
-h3 *{
-    display:flex;
-    align-items: center;
-    background-position: 30% 5%;
-}
-.cta-button{
-    text-align: left;
-}
-.icon{
-    font-size: 100px;
-    color:black;
-    display: flexbox;
-    flex-direction:inherit;
-    padding: 20px;
-}
