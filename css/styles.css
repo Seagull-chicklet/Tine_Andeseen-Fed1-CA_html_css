@@ -97,7 +97,7 @@ h1{
    z-index: 0;
    
 }
-.container2{
+.container{
     position: relative;
     text-align: center;
 }
@@ -126,8 +126,6 @@ h2{
     padding-top: 100px;
     border-top: 20px;
     margin-bottom: 0px;
-    width: 100%;
-    z-index: index 1;
     opacity: 0,6;
 }
 
@@ -143,6 +141,7 @@ h3{
     padding-bottom: 20px; 
     margin-top: 0px; 
     text-align: center;
+    color:#1c232d
 }
 
 p{
@@ -221,29 +220,16 @@ hr{
 
 /*about*/
 
-
-.about-wrapper{
+img{
+    width: 100%;
+    
+}
+.about{
     display:flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
-.sailor-image{
-    width:100%;
-    height:100%;
-    flex-direction:column;
-    max-width: 50px;
-    padding-left: 200px;
-    border-left: 50px;
-}
-.about{
-    width: 100%;
-    height: 100%;
-    flex-direction:column;
-    max-width: 50px;
-    padding-left: 200px;
-    border-left: 50px;
 
-}
 /*Contact*/
