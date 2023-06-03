@@ -100,13 +100,14 @@ h1{
 }
 
 .bottom-left{
+    font-size: 70px;
     width: 1200px;
     position: absolute;
     margin:auto;
     bottom: -110px;
+    border-left: 100px;
+    border-right: 100px;
     transform: translate(-50%, -50%);
-
-    
 }
 h2{ 
     display: flex;
@@ -121,8 +122,12 @@ h2{
     padding-bottom: 20px;
     padding-top: 100px;
     border-top: 20px;
+    padding-left: 50px;
+    margin-left: 600px;
+    border-left: 500px;
     margin-bottom: 0px;
     opacity: 0,6;
+    
 }
 
 h3{
@@ -157,6 +162,7 @@ p{
 
 /*jackets*/
 
+
 .jackets-wrapper {
     display:flex;
     justify-content: space-between;
@@ -176,6 +182,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: end;
     max-width: 50px;
     align-items: center;
     padding-left: 200px;
@@ -245,47 +252,55 @@ justify-content: space-between;
 }
 
 /*Thank you*/
-.background{
-    display: flex;
-    flex-direction: column;
-    background-position: 100%;
-    background-repeat: repeat-x;
-    background-color:#ffa200;
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .background{
+    background: image("../images/thank-you.jpg");
     background-size: cover;
-    background-attachment:scroll;
-    background-image: url("./images/Thankyou.png");
-    height: 100%;
-    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-
-}
-
+    background-color:orange;
+  }
+  .thank-you{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-items: top;
+    margin-top: 0px;
+  }
 h1{
    display: flex;
-   flex-direction: column;
+   flex-flow: column wrap;
    text-align: center;
-   position: absolute;
+   justify-content: center;
+   position: relative;
    font-size: 70px;
+   margin: 100px;
    color: #1c232d;
-   bottom: 460px;
-left: 550px;
+   bottom: 800px;
 }
 
-.about-content{
-    text-align: center;
+.thank-you-content{
     display: flex;
     flex-direction: column;
-    position:absolute;
+    justify-content: center;
+    position:relative;
     text-decoration: none;
+    text-align: center;
     color: #1c232d;
-    bottom: 300px;
-    left:100px;
-    right:100px;
+    bottom: 750px;
+
 }
 
 .cta-button-thank-you{ 
-    display: block;
-    position: absolute;
+    display: flex;
+    position: relative;
+    align-self: center;
     font-size: 40px;
     background-color: transparent;
     color:#D3E3E3;
@@ -295,11 +310,10 @@ left: 550px;
     border: 10px 20px 10px 20px;
     border-style: solid;
     border-radius: 8px;
-    bottom: 200px;
-    left: 600px;
 }
 .cta-button-thank-you a:hover{ 
     padding: 10px 20px 10px 20px;
+    border: 10px 20px 10px 20px;
     border-radius: 8px;
     border-color: #053541;
     background-color:#053541;
