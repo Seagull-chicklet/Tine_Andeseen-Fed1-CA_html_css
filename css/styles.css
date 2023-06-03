@@ -244,9 +244,30 @@ justify-content: space-between;
 }
 
 /*Contact*/
-.facbookIcon.instagramIcon{
-    height: 20px;
-    position: relative;
+h3{
+margin-top: 60px;
+}
+.contact-image{
+    display:flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    
+}
+.contact-information{
+    color: #1c232d;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    text-decoration: none;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.facbookIcon,.instagramIcon{
+    height: 10%;
+    position: absolute;
     
     
 }
