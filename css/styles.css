@@ -56,7 +56,7 @@ body{
    color: white;
 }
   .centered {
-    position: absolute;
+    position:absolute;
     top: 30%;
     left: 40%;
     transform: translate(-50%, -50%);
@@ -104,7 +104,7 @@ h1{
     font-size: 70px;
     width: 1200px;
     position: absolute;
-    margin:auto;
+    margin:0px;
     bottom: -110px;
     border-left: 100px;
     border-right: 100px;
@@ -125,7 +125,7 @@ h2{
     border-top: 20px;
     padding-left: 57px;
     padding-right: 50px;
-    margin-left: 600px;
+    margin-left: 550px;
     border-left: 500px;
     margin-bottom: 0px;
     opacity: 0,6;
@@ -235,10 +235,10 @@ hr{
     margin: auto;
     
 }
-.about-content p{
+.about-content p{ 
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: column;
     align-self: center;
 
 }
@@ -328,9 +328,7 @@ a{
     text-decoration: none;
     padding-top: 80px;
 }
-p{
-    line-height: 0px;
-}
+
 @media(max-width:380px){
     .jacket,.jackets-list{
         flex-direction: column;
@@ -406,7 +404,7 @@ a{
     padding-top: 80px;
 }
 p{
-    line-height: 5px;
+    line-height: 40px;
 }
 @media(max-width:380px){
     .jacket,.jackets-list{
