@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'UnicaOne','Ubuntu','Sans-serif';
-    src: url(../fonts/UnicaOne-Regular.ttf/../Ubuntu-Regular.ttf );
+    src: url("../fonts/UnicaOne-Regular.ttf/../Ubuntu-Regular.ttf ");
 
 }
 body{
@@ -51,9 +51,9 @@ body{
 }
 
 .container {
-    position: relative;
+   position: relative;
    text-align: center;
-  color: white;
+   color: white;
 }
   .centered {
     position: absolute;
@@ -86,6 +86,7 @@ a:hover{
 }
 
 h1{
+   display: flex;
    font-family: 'Unica One','Ubuntu','Sans-serif';
    font-size: 150px;
    font-weight: 200;
@@ -122,7 +123,8 @@ h2{
     padding-bottom: 20px;
     padding-top: 100px;
     border-top: 20px;
-    padding-left: 50px;
+    padding-left: 57px;
+    padding-right: 50px;
     margin-left: 600px;
     border-left: 500px;
     margin-bottom: 0px;
@@ -162,7 +164,6 @@ p{
 
 /*jackets*/
 
-
 .jackets-wrapper {
     display:flex;
     justify-content: space-between;
@@ -171,20 +172,17 @@ p{
     flex-wrap: wrap;
 }
 .jacket {
-display: flex;
-align-items: end;
+  display: flex;
+  align-items: end;
 }
 
 img{
     width: 100%;
 }
 .jackets-image{
-    display: flex;
+    display:flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: end;
     max-width: 50px;
-    align-items: center;
     padding-left: 200px;
     border-left: 50px;
     
@@ -194,8 +192,9 @@ img{
     display: flex;
     font-size: 2rem;
     text-decoration: none;
-    align-self: center;
     text-transform: uppercase;
+
+    
    
 }
 a:hover{
@@ -230,49 +229,116 @@ hr{
     flex-wrap: wrap;
 }
 .sailor-image{
-    display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    flex-wrap: wrap;
+    align-items: end;
+    padding: 0px;
+    margin: auto;
     
 }
-.about{
-    display: flex;
-flex-direction: column;
-justify-content: space-between;
+.about-content p{
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: center;
 
 }
-
+img{
+    width: 100%;
+}
+@media(max-width:380px){
+    .jacket,.jackets-list{
+        flex-direction: column;
+    }
+}
 /*Contact*/
+
 h3{
-margin-top: 60px;
+   margin-top: 60px;
 }
-.contact-image{
+.conact-wrapper{
     display:flex;
     justify-content: space-between;
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
+}
+.contact-image{
+    display: flex;
+    align-items: end;
     
 }
 .contact-information{
     color: #1c232d;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-size: 2rem;
     text-decoration: none;
-    align-self: center;
+    align-items: center;
     text-transform: uppercase;
+    text-indent: 50px;
+    padding-bottom: 90px;
 }
+.contact{
+    font-size: 50px;
+    display: inline;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 90px;
+    
+    
+}
+.pinicon{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 50px;
+    text-indent: 50px;
+    margin-top: auto;
 
-.facbookIcon,.instagramIcon{
-    height: 10%;
-    position: absolute;
+   
+}
+.phoneicon{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 50px;
+    text-indent: 50px;
+    margin-top: auto;
+
+
+}
+.facbookIcon {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    font-size: 70px;
+    border-left: 200px;
+    border: 200px;
     
-    
+}
+a{
+    color: #1c232d;
+    text-decoration: none;
+    padding-top: 80px;
+}
+p{
+    line-height: 0px;
+}
+@media(max-width:380px){
+    .jacket,.jackets-list{
+        flex-direction: column;
+    }
 }
 
 /*Thank you*/
+
 @media screen and (max-width: 600px) {
     .column {
       width: 100%;
@@ -281,7 +347,7 @@ margin-top: 60px;
   .background{
     background: image("../images/thank-you.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color:orange;
@@ -295,11 +361,7 @@ margin-top: 60px;
     margin-top: 0px;
   }
 h1{
-   display: flex;
-   flex-flow: column wrap;
-   text-align: center;
-   justify-content: center;
-   position: relative;
+   position:relative;
    font-size: 70px;
    margin: 100px;
    color: #1c232d;
@@ -307,9 +369,7 @@ h1{
 }
 
 .thank-you-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+   
     position:relative;
     text-decoration: none;
     text-align: center;
@@ -336,18 +396,20 @@ h1{
     border-color: #D3E3E3;
     border: 10px 20px 10px 20px;
     bottom: 800px;
-    left: 50%;
+    left: 42%;
     
 }
-.cta-thank-you-button a:hover{ 
-    padding: 10px 20px 10px 20px;
-    border: 10px 20px 10px 20px;
-    border-radius: 8px;
-    border-color: #053541;
-    background-color:#053541;
-    color: whitesmoke;
-    text-align: center;
-    text-decoration: none;
-    border-color: #D3E3E3;
 
+a{
+    color:#D3E3E3;
+    text-decoration: none;
+    padding-top: 80px;
+}
+p{
+    line-height: 5px;
+}
+@media(max-width:380px){
+    .jacket,.jackets-list{
+        flex-direction: column;
+    }
 }
