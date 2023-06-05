@@ -132,7 +132,7 @@ h2{
     
 }
 
-h3{
+h3 {
     display: flex;
     font-family: 'Ubuntu','Sans-serif';
     font-size: 40px;
@@ -249,7 +249,7 @@ img{
 }
 /*Contact*/
 
-h3{
+.contact h3{
    margin-top: 60px;
 }
 .conact-wrapper{
