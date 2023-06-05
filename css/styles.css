@@ -110,7 +110,7 @@ h1{
     border-right: 100px;
     transform: translate(-50%, -50%);
 }
-h2{ 
+.bottom-left h2{ 
     display: flex;
     font-family: 'Unica One','Ubuntu','Sans-serif';
     font-size: 50px;
@@ -119,16 +119,10 @@ h2{
     background-blend-mode: lighten;
     text-decoration: underline;
     color:#1c232d;
-    background-size: cover;
-    padding-bottom: 20px;
-    padding-top: 100px;
-    border-top: 20px;
-    padding-left: 57px;
-    padding-right: 50px;
     margin-left: 550px;
-    border-left: 500px;
     margin-bottom: 0px;
     opacity: 0,6;
+    padding:100px 50px 20px 57px ;
     
 }
 
@@ -228,19 +222,16 @@ hr{
     margin: 0 auto;
     flex-wrap: wrap;
 }
-.about figure img{
-display:flex;
-align-items:end;
- }
 .about-content { 
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-self: center;
+    display: flex;
+    flex:1;
+}
+.figure .about-img{
+    display:flex;
+    flex: 1;
+    align-items: end;
+}
 
-}
-img{
-    width: 100%;
-}
 
 @media(max-width:380px){
     .jacket,.jackets-list{
@@ -276,6 +267,7 @@ img{
     text-transform: uppercase;
     text-indent: 50px;
     padding-bottom: 90px;
+    line-height: 8px;
 }
 .contact{
     font-size: 50px;
