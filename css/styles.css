@@ -61,6 +61,21 @@ body{
     left: 40%;
     transform: translate(-50%, -50%);
   }
+
+h1{
+    display: flex;
+    font-family: 'Unica One','Ubuntu','Sans-serif';
+    font-size: 150px;
+    font-weight: 200;
+    letter-spacing: 20px;
+    position:center;
+    top: 400x;
+    left:80px;
+    color: whitesmoke;
+    background-color: transparent;
+    z-index: 0;
+    
+ }
   
 .cta-button{
     font-size: 40px;
@@ -85,20 +100,6 @@ a:hover{
     text-align: center;
 }
 
-h1{
-   display: flex;
-   font-family: 'Unica One','Ubuntu','Sans-serif';
-   font-size: 150px;
-   font-weight: 200;
-   letter-spacing: 20px;
-   position:center;
-   top: 400x;
-   left:80px;
-   color: whitesmoke;
-   background-color: transparent;
-   z-index: 0;
-   
-}
 
 .bottom-left{
     font-size: 70px;
@@ -174,6 +175,7 @@ img{
     width: 100%;
 }
 .jackets-image{
+    
     display:flex;
     flex-direction: column;
     max-width: 50px;
@@ -300,9 +302,6 @@ hr{
     text-indent: 50px;
     margin-top: auto;
 
-
-}
-.phone-email{
 
 }
 .facbookIcon {
