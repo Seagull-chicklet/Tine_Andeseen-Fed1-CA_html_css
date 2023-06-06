@@ -51,17 +51,17 @@ body{
 }
 
 .container {
-   position: relative;
-   text-align: center;
-   color: white;
-}
-  .centered {
-    position:absolute;
-    top: 30%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-  }
-
+    position: relative;
+    text-align: center;
+    color: white;
+ }
+   .centered {
+     position:absolute;
+     top: 30%;
+     left: 40%;
+     transform: translate(-50%, -50%);
+   }
+ 
 h1{
     display: flex;
     font-family: 'Unica One','Ubuntu','Sans-serif';
@@ -243,7 +243,7 @@ hr{
 /*Contact*/
 
 .contact h3{
-   margin-top: 60px;
+   margin-top: 65px;
 }
 .conact-wrapper{
     display:flex;
@@ -324,6 +324,11 @@ a{
     .jacket,.jackets-list{
         flex-direction: column;
     }
+}
+/*Lightweight*/
+
+h3{
+    margin-top: 65px;
 }
 
 /*Thank you*/
