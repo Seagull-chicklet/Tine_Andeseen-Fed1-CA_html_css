@@ -1,7 +1,7 @@
 
 @font-face {
-    font-family: 'UnicaOne','Ubuntu','Sans-serif';
-    src: url("../fonts/UnicaOne-Regular.ttf/../Ubuntu-Regular.ttf ");
+    font-family: 'Unica+One','Ubuntu','Sans-serif';
+    src: url("../fonts/Unica+One-Regular.ttf/../Ubuntu-Regular.ttf ");
 
 }
 body{
@@ -10,8 +10,18 @@ body{
 
 }
 /* Homepage */
-.header{ 
-    font-family: 'Unica One','Ubuntu','Sans-serif';
+header{ 
+    display: flex;
+    background-image:url(../images/bergen-home.jpg);
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center center;
+}
+
+nav{
      font-size: 40px; 
      text-align: center;
      text-decoration: none;
@@ -20,13 +30,10 @@ body{
      background-size: cover;
      color:#1c232d;
      width: 100%;
-    padding:10px 10px 10px 10px;
-    border-top: 20px;
-    border-bottom: 150px;
-    position:fixed;
-    top:0;
-    z-index: 1;
-    
+     padding:10px 10px 90px 10px;
+     position:fixed;
+     top:0;
+     z-index: 1; 
 }
 
 .fa-cart-shopping{
@@ -39,54 +46,17 @@ body{
     display:-webkit-inline-box;
   
 }
-
-.bergen-home{
-    
-    background-image: url(../images/bergen-home.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0px;
-    height: 100%;
-}
-
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
- }
-   .centered {
-     position:absolute;
-     top: 30%;
-     left: 40%;
-     transform: translate(-50%, -50%);
-   }
  
-h1{
-    display: flex;
-    font-family: 'Unica One','Ubuntu','Sans-serif';
-    font-size: 150px;
-    font-weight: 200;
-    letter-spacing: 20px;
-    position:center;
-    top: 400x;
-    left:80px;
-    color: whitesmoke;
-    background-color: transparent;
-    z-index: 0;
-    
- }
+
   
 .cta-button{
-    font-size: 40px;
+    font-size: 25px;
     background-color: transparent;
     color: #1c232d;
     text-decoration: none;
     text-align: center;
-    display: inline-block;
     padding: 10px 10px 10px 10px;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin:0px 4px;
     display:-webkit-inline-box;
     background-position: center;
 }
@@ -99,44 +69,45 @@ a:hover{
     color: whitesmoke;
     text-align: center;
 }
-
-
-.bottom-left{
-    font-size: 70px;
-    width: 1200px;
-    position: absolute;
-    margin:0px;
-    bottom: -110px;
-    border-left: 100px;
-    border-right: 100px;
-    transform: translate(-50%, -50%);
-}
- h2{ 
+h1{
+    font-family: 'Unica+One';
     display: flex;
-    font-family: 'Unica One','Ubuntu','Sans-serif';
-    font-size: 50px;
+    position: absolute;
+    bottom:250px;
+    color: #D3E3E3;
+    font-size: 60px;
+    font-family: 'UnicaOne','Ubuntu','Sans-serif';
+    padding: 0px 200px;
+
+}
+
+ h2 {
+     display: flex;
+     flex-wrap: wrap;
+    position: absolute;
+    font-size: 30px;
     background-color: #D3E3E3;
+    background-size: cover;
     background:-webkit-linear-gradient(90deg,rgba(227,227,227,1) 0%,rgba(211,227,227,1) 35%, rgba(211,227,227,0) 100%);
     background-blend-mode: lighten;
     text-decoration: underline;
     color:#1c232d;
-    margin-left: 550px;
-    margin-bottom: 0px;
-    opacity: 0,6;
-    padding:100px 50px 20px 57px ;
-    
+    padding: 70px 20px 20px 20px;
+    bottom: -90px;
+    width: 100%;
+
 }
 
 h3 {
     display: flex;
+    flex-wrap: wrap;
     font-family: 'Ubuntu','Sans-serif';
     font-size: 40px;
     background-image:url("../images/rainyday\ pages-header.jpg");
     background-size:cover;
     background-position:50% 30%;
     padding-left: 50%;
-    padding-top: 20px;
-    padding-bottom: 20px; 
+    padding: 20px 0px 20px 600px; 
     margin-top: 0px; 
     text-align: center;
     color:#1c232d
@@ -399,13 +370,7 @@ h3{
     justify-items: top;
     margin-top: 0px;
   }
-h1{
-   position:relative;
-   font-size: 70px;
-   margin: 100px;
-   color: #1c232d;
-   bottom: 800px;
-}
+
 
 .thank-you-content{
     line-height: 10px;
