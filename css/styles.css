@@ -285,43 +285,47 @@ h3 {
 .lightweight-wrap{
     display:flex;
     gap: 8px;
-    
+    flex-wrap: wrap; 
 }
 
 .product-card{
-    flex:3;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex:1;
     box-shadow: 0 2px 4px #1c232d;
     border-radius: 8px; 
 }
 
 .product-image{
-    display:flex;
+    flex:1;
 }
 .product-content{
-    display:flex;
+   display: flex;
     flex-direction: column;
     text-align: left;
     margin:0px
 }
 .price{
-    display: flex;
-    text-align: end;
+    text-justify: auto;
 }
 .add-to-cart {
-    display: flex;
-    padding: 0px 40px 0px 40px;
-    margin-bottom: 40px;
- 
+   flex:1;
+    padding: 0px 0px 0px 80px;
+    margin-bottom: 30px;
 }
 img{
     width: 100%;
-
 }
 .light-weight{
-flex: :1;
+flex:1;
+
 }
+.size-buttons{
+   text-align: center;
+}
+@media(max-width:480px){
+    .lightweight-wrap {
+      flex-direction: column;
+    }
+  }
 /*Thank you*/
 
 body.thank-you{
