@@ -9,7 +9,7 @@ body{
     font-family: 'UnicaOne','Ubuntu','Sans-serif';
 
 }
-/* Homepage */
+
 header{ 
     display: flex;
     background-image:url(../images/bergen-home.jpg);
@@ -55,7 +55,7 @@ nav{
     color: #1c232d;
     text-decoration: none;
     text-align: center;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 40px 10px 50px;
     margin:0px 4px;
     display:-webkit-inline-box;
     background-position: center;
@@ -93,7 +93,7 @@ h1{
     text-decoration: underline;
     color:#1c232d;
     padding: 70px 20px 20px 20px;
-    bottom: -90px;
+    bottom: -100px;
     width: 100%;
 
 }
@@ -195,7 +195,7 @@ hr{
     margin: 0 auto;
     flex-wrap: wrap;
 }
-.about-content { 
+.about-text { 
     display: flex;
     flex:1;
 }
@@ -298,8 +298,8 @@ a{
 }
 /*Lightweight*/
 
-h3{
-    margin-top: 65px;
+h3.spesific{
+    margin-top: 100px;
 }
 .lightweight-wrap{
     display:flex;
