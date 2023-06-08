@@ -163,10 +163,8 @@ img{
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
-
-    
-   
 }
+
 a:hover{
     padding: 10px 20px 10px 20px;
     border-radius: 8px;
@@ -176,13 +174,11 @@ a:hover{
     text-align: center;
 }
 
-
 @media(max-width:380px){
     .jacket,.jackets-list{
         flex-direction: column;
     }
 }
-
 
 hr{
     border: 3px solid lightgrey; 
@@ -204,7 +200,6 @@ hr{
     display:flex;
     align-items: end;
 }
-
 
 @media(max-width:380px){
     .jacket,.jackets-list{
