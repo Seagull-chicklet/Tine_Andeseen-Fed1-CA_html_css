@@ -174,34 +174,29 @@ a:hover{
     text-align: center;
 }
 
-@media(max-width:480px){
-    .jacket,.jackets-list{
-        flex-direction: column;
-    }
-}
-
 hr{
     border: 3px solid lightgrey; 
 }
 
 /*about*/
 
-.about-content{
+.about-page{
     display:flex;
+    flex-wrap: wrap;
 }
 
-.about-text p{ 
-      flex: 1;
+.about-content{ 
+   flex:1; 
 }
 img{
     width: 100%;
 }
-
 @media(max-width:480px){
-    .about-content{
-        flex-direction: column;
-    }
+.about-page{
+    flex-direction: column;
 }
+}
+
 /*Contact*/
 
 .contact h3{
@@ -282,11 +277,6 @@ a{
     padding-top: 80px;
 }
 
-@media(max-width:480px){
-    .contact-wrapper{
-        flex-direction: column;
-    }
-}
 /*Lightweight*/
 
 h3 {
