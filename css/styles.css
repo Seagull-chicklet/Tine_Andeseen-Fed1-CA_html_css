@@ -185,9 +185,7 @@ a:hover{
 
 
 hr{
-    
     border: 3px solid lightgrey; 
-
 }
 
 /*about*/
@@ -198,11 +196,9 @@ hr{
     margin: 0 auto;
     flex-wrap: wrap;
 }
-.about-text { 
+.about-text p{ 
     display: flex;
-    flex: 1;
     flex-direction: column;
-    
 }
 .about-img{
     display:flex;
@@ -353,27 +349,18 @@ h3 {
 }
 /*Thank you*/
 
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-  .background{
-    background: image("../images/thank-you.jpg");
+body.thank-you{
+    position: relative;
+    background-image: url("../images/thank-you.jpg");
     background-size: cover;
-    background-position: top;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color:orange;
-  }
-  .thank-you{
-    display:flex;
+    display: flex;
     flex-direction: column;
-    position: absolute;
-    flex-wrap: wrap;
-    justify-items: top;
-    margin-top: 0px;
-  }
+
+}
 
 
 .thank-you-content{
