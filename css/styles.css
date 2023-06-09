@@ -47,8 +47,6 @@ nav{
   
 }
  
-
-  
 .cta-button{
     font-size: 25px;
     background-color: transparent;
@@ -275,72 +273,70 @@ a{
 /*Lightweight*/
 
 h3 {
-    margin-top: 100px;
+    margin-top: 85px;
 }
 .lightweight-flexbox{
     display:flex;
     gap: 8px;
     flex-wrap: wrap; 
-   justify-self: auto;
+  
 }
 
 .product-card{
-   overflow: hidden;
+  
     box-shadow: 0 2px 4px #1c232d;
     border-radius: 1rem; 
     text-align:center;
     position:relative;
     width:400px;
-    margin-bottom: .4rem;
-    margin-left: .5rem;
+   
 }
-.size-mens{
-    padding-top:20px
-}
-.product-content{
-    text-align: left;
+.product-image{
+    width:150px;
+    padding-left: 70px;
 }
 
-.add-button {
-    margin-bottom: 30px;
-    padding: 20px;
+
+.size-buttons {
     text-align: center;
     padding: 10px 15px 10px 15px;
     border-radius: 8px;
     border-style: none;
-    background-color: lightgrey;
-    font: #1c232d;
+    background-color: lightgray;
+ }
+ .size-buttons:hover{
+     background-color: #053541;
+     color:#D3E3E3;
+ }
+ .size-buttons:active{
+    background-color: #1ca8cb;
+    color:#D3E3E3;
+ }
+
+.product-content{
+    text-align: left;
+    font-size: 15px;
+    margin-top: 0px;
 }
-.add-button:hover{
-    background-color: #053541;
-    color:#D3E3E3
-}
+.button-add a:link{
+    background-color: lightgray;
+    color: #1c232d;
+    border-style: none;
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
+
+  }
+
 img{
-    width: 100%;
+   width: 100%;
+}
+.lightweight-image{
+    content: inherit;
 }
 .image-card{
-    overflow: hidden;
-    border-radius: 1rem; 
-    text-align:center;
-    position:relative;
-    width: 550px;
-    height: 900px;
-    margin-bottom: .4rem;
-    margin-left: .5rem;
-
+    flex: 1;
+    
 }
-.size-buttons{
-   text-align: center;
-   padding: 10px 15px 10px 15px;
-   border-radius: 8px;
-   border-style: none;
-   background-color: lightgray;
-}
-.size-buttons:hover{
-    background-color: #053541;
-    color:#D3E3E3
-}
-
 /*Thank you*/
 
 body.thank-you{
@@ -385,11 +381,10 @@ body.thank-you{
     left: 42%;  
 }
 
-a{
-    color:#D3E3E3;
-    text-decoration: none;
-    padding-top: 80px;
-}
+
+
+/*media query*/
+
 @media(max-width:1170px){
 body{
     flex-direction:column;
@@ -402,5 +397,4 @@ body{
         flex-direction: column;
     }
     }
-
 
