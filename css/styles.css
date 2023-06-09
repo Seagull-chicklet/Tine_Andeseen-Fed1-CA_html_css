@@ -282,11 +282,11 @@ a{
 h3 {
     margin-top: 100px;
 }
-.lightweight-wrap{
+.lightweight-flexbox{
     display:flex;
     gap: 8px;
     flex-wrap: wrap; 
-    justify-content: center;
+   justify-self: auto;
 }
 
 .product-card{
@@ -295,11 +295,13 @@ h3 {
     border-radius: 1rem; 
     text-align:center;
     position:relative;
-    width: 280px;
+    width:400px;
     margin-bottom: .4rem;
     margin-left: .5rem;
 }
-
+.size-mens{
+    padding-top:20px
+}
 .product-content{
     text-align: left;
 }
@@ -316,12 +318,13 @@ h3 {
 img{
     width: 100%;
 }
-.light-weight{
+.image-card{
     overflow: hidden;
     border-radius: 1rem; 
     text-align:center;
     position:relative;
-    width: 280px;
+    width: 550px;
+    height: 900px;
     margin-bottom: .4rem;
     margin-left: .5rem;
 
