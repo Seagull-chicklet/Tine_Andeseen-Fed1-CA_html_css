@@ -191,11 +191,6 @@ hr{
 img{
     width: 100%;
 }
-@media(max-width:480px){
-.about-page{
-    flex-direction: column;
-}
-}
 
 /*Contact*/
 
@@ -306,14 +301,19 @@ h3 {
     text-align: left;
 }
 
-.add-buttons {
+.add-button {
     margin-bottom: 30px;
     padding: 20px;
     text-align: center;
     padding: 10px 15px 10px 15px;
     border-radius: 8px;
     border-style: none;
-    background-color: lightgray;
+    background-color: lightgrey;
+    font: #1c232d;
+}
+.add-button:hover{
+    background-color: #053541;
+    color:#D3E3E3
 }
 img{
     width: 100%;
@@ -336,11 +336,11 @@ img{
    border-style: none;
    background-color: lightgray;
 }
-@media(max-width:480px){
-    .lightweight-wrap {
-      flex-direction: column;
-    }
-  }
+.size-buttons:hover{
+    background-color: #053541;
+    color:#D3E3E3
+}
+
 /*Thank you*/
 
 body.thank-you{
@@ -382,8 +382,7 @@ body.thank-you{
     border-color: #D3E3E3;
     border: 10px 20px 10px 20px;
     bottom: 800px;
-    left: 42%;
-    
+    left: 42%;  
 }
 
 a{
@@ -391,8 +390,17 @@ a{
     text-decoration: none;
     padding-top: 80px;
 }
-@media(max-width:700px){
+@media(max-width:1170px){
 body{
     flex-direction:column;
 }
 }
+
+
+@media(max-width:700px){
+    .about-page{
+        flex-direction: column;
+    }
+    }
+
+
