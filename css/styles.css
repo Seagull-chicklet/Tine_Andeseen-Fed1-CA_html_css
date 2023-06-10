@@ -186,79 +186,59 @@ img{
 .contact h3{
    margin-top: 65px;
 }
-.conact-wrapper{
+.contact-wrapping{
     display:flex;
+    position: relative;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
     flex-wrap: wrap;
 }
-.contact-image{
-    display: flex;
-    align-items: end;
-    
-}
-.contact-information{
+
+.contact-info{
+    flex:1;
     color: #1c232d;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    
     font-size: 2rem;
     text-decoration: none;
-    align-items: center;
     text-transform: uppercase;
-    text-indent: 50px;
-    padding-bottom: 90px;
-    line-height: 8px;
+   text-align: center;
+    padding-bottom: 100px;
+    line-height: 2px;
 }
-.contact{
-    font-size: 50px;
-    display: inline;
-    justify-content: space-between;
-    align-items:center;
-    margin-top: 90px;
-    
-    
-}
-.pinicon{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-between;
-    font-size: 50px;
-    text-indent: 50px;
-    margin-top: auto;
-
+.contact-info a{
+    border-bottom: 90px;
+    color: #1c232d;
+    display: block;
+    text-decoration: none;
+    padding:20px 20px 20px 20px;
+   margin-bottom: 40px;
    
 }
-.phoneicon{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-between;
-    font-size: 50px;
-    text-indent: 50px;
-    margin-top: auto;
-
-
+.contact-info i{
+    display: block;
+    color: #053541;
+    padding-bottom: 40px;
+    margin-top: 40px;
 }
-.facbookIcon {
-    display:flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    font-size: 70px;
-    border-left: 200px;
-    border: 200px;
+.social-media-links{
+    text-align: center;
+}
+.social-media-links a{
+    color: #1c232d;
+    text-align: center;
+    text-decoration: none;
     
 }
-a{
-    color: #1c232d;
-    text-decoration: none;
-    padding-top: 80px;
+.social-media-links i{
+    color: #053541;
+    font-size: 50px;
+}
+.social-media-links a:hover,.contact-info a:hover{
+    color: #D3E3E3;
+    background-color: #053541;
+    
+}
+.contact-image{
+    width: 100%;
 }
 
 /*Lightweight*/
@@ -326,7 +306,7 @@ img{
 }
 .image-card{
     flex: 1;
-    
+   justify-content: space-between; 
 }
 /*Thank you*/
 
@@ -359,7 +339,7 @@ body.thank-you{
    border-style: solid;
    padding:10px 50px 10px 50px;
    color: #D3E3E3;
- align-self:center
+   align-self:center
    
 }
 .home-button:hover{
@@ -376,13 +356,7 @@ body{
 
 
 @media(max-width:700px){
-    .about-page{
+   .lightweight-flexbox .about-page,.thank-you{
         flex-direction: column;
     }
     }
-
-@media(min-width:435px){
-    .than-kyou{
-        flex-direction: column;
-    }
-}
