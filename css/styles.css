@@ -60,7 +60,7 @@ nav{
 }
 
 a:hover{
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
     border-radius: 8px;
     border-color: #053541;
     background-color:#053541;
@@ -161,15 +161,6 @@ img{
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-a:hover{
-    padding: 10px 20px 10px 20px;
-    border-radius: 8px;
-    border-color: #053541;
-    background-color:#053541;
-    color: whitesmoke;
-    text-align: center;
 }
 
 hr{
@@ -352,37 +343,29 @@ body.thank-you{
 }
 
 .thank-you-content{
-    line-height: 10px;
-    position:relative;
-    text-decoration: none;
-    text-align: center;
-    color: #1c232d;
-    bottom: 750px;
+    flex: content;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    flex-direction: column;
+    line-height: 35px;
+    scroll-margin-top: 50px;
 }
-
-.thank-you-cta-button{ 
-    display: inline-block;
-    justify-content: center;
-    position: relative;
-    align-self: center;
-    font-family: 'unicaOne','Ubuntu';
-    font-size: 40px;
-    background-color: transparent;
+.home-button{
+   background-color: transparent;
+   border-color: #D3E3E3;
+   border-width: .2em;
+   border-radius: 8px;
+   border-style: solid;
+   padding:10px 50px 10px 50px;
+   color: #D3E3E3;
+ align-self:center
+   
+}
+.home-button:hover{
+    background-color: #053541;
     color:#D3E3E3;
-    text-decoration:none;
-    text-align: center;
-    padding: 10px 20px 10px 20px;
-    border: 10px 20px 10px 20px;
-    border-style: solid;
-    border-radius: 8px;
-    border-color: #D3E3E3;
-    border: 10px 20px 10px 20px;
-    bottom: 800px;
-    left: 42%;  
 }
-
-
-
 /*media query*/
 
 @media(max-width:1170px){
@@ -398,3 +381,8 @@ body{
     }
     }
 
+@media(min-width:435px){
+    .than-kyou{
+        flex-direction: column;
+    }
+}
