@@ -263,7 +263,6 @@ h3 {
 }
 
 .product-card{
-  
     box-shadow: 0 2px 4px #1c232d;
     border-radius: 1rem; 
     text-align:center;
@@ -298,25 +297,27 @@ h3 {
     font-size: 15px;
     margin-top: 0px;
 }
-.button-add a:link{
+.button-add{
     background-color: lightgray;
     color: #1c232d;
     border-style: none;
     border-radius: 8px;
     padding: 10px 10px 10px 10px;
-
+    text-decoration: none;
+    
   }
-
+.button-add:hover{
+    background-color: #053541;
+    color: #D3E3E3;
+}
 img{
    width: 100%;
+
 }
-.lightweight-image{
-    content: inherit;
+.light{
+    flex:1;
 }
-.image-card{
-    flex: 1;
-   justify-content: space-between; 
-}
+
 /*Thank you*/
 
 body.thank-you{
