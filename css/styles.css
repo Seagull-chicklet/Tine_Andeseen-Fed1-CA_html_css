@@ -361,6 +361,13 @@ body.thank-you{
     background-color: #053541;
     color:#D3E3E3;
 }
+
+/*cart & checkout*/
+.cart{
+    flex:1;
+    border-radius: 8px;
+}
+
 /*media query*/
 
 @media(max-width:1170px){
