@@ -31,42 +31,104 @@
       <a href="cart.html" class="fa-solid fa-cart-shopping cta-button"></a>
     </nav>
     <h3>Cart & Checkout</h3>
-    <section class="cart&checkout-wrapping">
+    <section class="cart-checkout-wrapping">
       <div class="cart">
         <img
+          class="product-image-checkout"
           src="../images/lightweight-woman.png"
           alt="grey lightweight jacket for running and exercise fitted for woman"
         />
-        <p>current product description</p>
-        <button>size</button>
-        <p>NOK</p>
-        <button>+</button><button>-</button>
+        <div class="product-description">
+          <p>current product description of selected product</p>
+        </div>
+        <div>
+          <label>Size</label>
+          <select name="Size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <br />
+        <i class="fa-solid fa-trash-can"></i>
+        <p>------ NOK</p>
+        <div>
+          <button>-</button>
+          <select name="Quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button>+</button>
+        </div>
+        <hr />
         <p>total: price nok</p>
       </div>
       <div class="cart">
         <p>checkout</p>
+        <hr />
         <form action="form-success.php" method="post">
           <p>Name</p>
-          <input class="Name" type="text" name="full name" />
+          <input
+            class="Name"
+            type="text"
+            name="full name"
+            placeholder="Full name"
+          />
+          <hr />
           <p>Adress</p>
-          <input class="Adress" type="text" name="Full Adress" />
+          <input
+            class="Adress"
+            type="text"
+            name="Full Adress"
+            placeholder="Full Adress"
+          />
+          <hr />
           <p>E-mail</p>
-          <input class="e-mail" type="text" name="e-mail adress" />
+          <input
+            class="e-mail"
+            type="text"
+            name="e-mail adress"
+            placeholder="e-mail adress"
+          />
+          <hr />
           <p>Card number</p>
-          <input class="Card number" type="text" name="XXXX XXXX XXXX XXXX" />
+          <input
+            class="Card number"
+            type="text"
+            name="XXXX XXXX XXXX XXXX"
+            placeholder="XXXX XXXX XXXX XXXX"
+          />
+          <hr />
           <p>Expire date</p>
-          <input class="Expire date" type="text" name="XX/XX" />
+          <input
+            class="Expire date"
+            type="text"
+            name="XX/XX"
+            placeholder="XX/XX"
+          />
+          <hr />
           <p>CVC</p>
-          <input class="CVC" type="text" name="XXX" />
+          <input class="CVC" type="text" name="XXX" placeholder="XXX" />
         </form>
+        <hr />
         <label for="visa">Visa</label>
         <input type="radio" id="visa" name="payment_method" value="visa" />
         <label for="vipps">Vipps</label>
         <input type="radio" id="vipps" name="payment_method" value="vipps" />
-      </div>
-      <div>
+        <br />
         <button>submit</button>
       </div>
+      <div></div>
     </section>
   </body>
 </html>
