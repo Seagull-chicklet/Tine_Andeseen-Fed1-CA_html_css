@@ -34,14 +34,14 @@
     <section class="cart-checkout-wrapping">
       <div class="cart">
         <img
-          class="product-image-checkout"
+          class="product-image-cart"
           src="../images/lightweight-woman.png"
           alt="grey lightweight jacket for running and exercise fitted for woman"
         />
-        <div class="product-description">
+        
           <p>current product description of selected product</p>
-        </div>
-        <div>
+       
+        <div class="product-description">
           <label>Size</label>
           <select name="Size">
             <option value="S">S</option>
@@ -51,10 +51,14 @@
             <option value="XXL">XXL</option>
           </select>
         </div>
-        <br />
-        <i class="fa-solid fa-trash-can"></i>
-        <p>------ NOK</p>
-        <div>
+        <br>
+        <div class="product-description-trash">
+          <i class="fa-solid fa-trash-can"></i>
+        </div>
+        
+          <p>------ NOK</p>
+      
+        <div class="product-description">
           <button>-</button>
           <select name="Quantity">
             <option value="1">1</option>
@@ -70,65 +74,78 @@
           </select>
           <button>+</button>
         </div>
+
         <hr />
-        <p>total: price nok</p>
+        <div class="product-description">
+          <p>total: price nok</p>
+        </div>
       </div>
+      
       <div class="cart">
+        <div class="point">
         <p>checkout</p>
-        <hr />
+        </div>
+      <div class="point">
         <form action="form-success.php" method="post">
           <p>Name</p>
-          <input
+          <input class="fill-in"
             class="Name"
             type="text"
             name="full name"
-            placeholder="Full name"
-          />
-          <hr />
+            placeholder="Full name">
+        </div>
+          <div class="point">
+            <form action="form-success.php" method="post">
           <p>Adress</p>
-          <input
+          <input class="fill-in"
             class="Adress"
             type="text"
             name="Full Adress"
-            placeholder="Full Adress"
-          />
-          <hr />
+            placeholder="Full Adress">
+          </div>
+          <div class="point">
           <p>E-mail</p>
-          <input
+          <input class="fill-in"
             class="e-mail"
-            type="text"
+            type="email"
             name="e-mail adress"
-            placeholder="e-mail adress"
-          />
-          <hr />
+            placeholder="e-mail adress">
+          </div>
+          <div class="point">
           <p>Card number</p>
-          <input
+          <input class="fill-in"
             class="Card number"
-            type="text"
+            type="number"
             name="XXXX XXXX XXXX XXXX"
             placeholder="XXXX XXXX XXXX XXXX"
           />
-          <hr />
+          </div>
+          <div class="point">
           <p>Expire date</p>
-          <input
+          <input class="fill-in"
             class="Expire date"
-            type="text"
+            type="number"
             name="XX/XX"
-            placeholder="XX/XX"
-          />
-          <hr />
+            placeholder="XX/XX"/>
+          </div>
+          <div class="point">
           <p>CVC</p>
-          <input class="CVC" type="text" name="XXX" placeholder="XXX" />
-        </form>
-        <hr />
+          <input class="fill-in" class="CVC" type="number" name="XXX" placeholder="XXX" />
+        </div>
+        <br>
+        <div class="point">
         <label for="visa">Visa</label>
-        <input type="radio" id="visa" name="payment_method" value="visa" />
+        <input class="dotts" type="radio" id="visa" name="payment_method" value="visa" />
         <label for="vipps">Vipps</label>
-        <input type="radio" id="vipps" name="payment_method" value="vipps" />
-        <br />
-        <button>submit</button>
-      </div>
-      <div></div>
+        <input class="dotts"type="radio" id="vipps" name="payment_method" value="vipps" />
+        </div>
+    </form>
+        <div class="point">
+        <button class="button-add">submit</button>
+       </div>
+    </div> 
+</div> 
+</div> 
     </section>
   </body>
 </html>
