@@ -330,7 +330,6 @@ img{
 .cart-checkout-wrapping{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     gap:8px;
     margin-left: 8px;
     margin-bottom: 10px;
@@ -346,6 +345,7 @@ img{
     border-radius: 8px;
     border-left: 8px;
     align-items: center;
+    overflow-y: hidden;
     
 }
 .product-image-cart{
@@ -355,15 +355,60 @@ img{
     margin-top: 90px;;
 }
 .cart hr{
-    width: 350px;
+    width: 500px;
+    border-color: #666768;
 }
 
-.point{
+.sizes{
+    font-size: 25px;
+    color: #D3E3E3;
+    background-color: #053541;
+    border-radius: 8px;
+   padding:10px 20px 10px 20px;
+    text-align: center;
+}
+select{
+    border: none;
+}
+.product-trash{
+    color: #053541;
+    font-size: 50px;
+    text-align: end;
+    padding-right: 20px;
+}
+.product-trash:hover{
+    color: orange;
+}
+.up-down {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    border: none;
+    background-color:#053541;
+    color: #D3E3E3;
+}
+.up-down:hover{
+    color:white;
+    background-color: orange;
+}
+.product-price{
+    text-align: end;
+    padding:40px 10px;
+
+}
+.product-total-price{
+    text-align: start;
+}
+.product-total-price-sum{
+    text-align: end;
+}
+.point{   
     
-height: 50px;
-margin-bottom: 60px;
-font-size: 25px;
-line-height: 10px;
+    height: 50px;
+    margin-bottom: 60px;
+    font-size: 25px;
+    line-height: 10px;
 }
 .fill-in{
    
@@ -371,11 +416,22 @@ line-height: 10px;
     border: none;
     margin-bottom: 10px;
     border-bottom: 4px solid #666768;
-    width: 300px;
+    width: 500px;
 
 }
-
-
+.cart p{
+    font-size :25px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.fa-brands, .fa-cc-visa{
+font-size: 40px;
+color: #053541;
+}
+.vipps{
+    width: 100px;
+   border-top: 40px;
+}
 /*Thank you*/
 
 body.thank-you{

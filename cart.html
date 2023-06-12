@@ -36,14 +36,14 @@
         <img
           class="product-image-cart"
           src="../images/lightweight-woman.png"
-          alt="grey lightweight jacket for running and exercise fitted for woman"
-        />
+          alt="grey lightweight jacket for running and exercise fitted for woman"/>
         
           <p>current product description of selected product</p>
        
-        <div class="product-description">
-          <label>Size</label>
+        <div class="sizes">
+          <label >Size</label>
           <select name="Size">
+            <option value=""> </option>
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
@@ -52,14 +52,14 @@
           </select>
         </div>
         <br>
-        <div class="product-description-trash">
+        <div class="product-trash">
           <i class="fa-solid fa-trash-can"></i>
         </div>
-        
+        <div class="product-price">
           <p>------ NOK</p>
-      
+        </div>
         <div class="product-description">
-          <button>-</button>
+          <button class="up-down"id="plus" >-</button>
           <select name="Quantity">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -72,12 +72,15 @@
             <option value="9">9</option>
             <option value="10">10</option>
           </select>
-          <button>+</button>
+          <button class="up-down" id="minus">+</button>
         </div>
 
         <hr />
-        <div class="product-description">
-          <p>total: price nok</p>
+        <div class="product-total-price">
+          <p>total:</p>
+        </div>
+          <div class="product-total-price-sum">
+          <p>------ NOK</p>
         </div>
       </div>
       
@@ -117,8 +120,7 @@
             class="Card number"
             type="number"
             name="XXXX XXXX XXXX XXXX"
-            placeholder="XXXX XXXX XXXX XXXX"
-          />
+            placeholder="XXXX XXXX XXXX XXXX"/>
           </div>
           <div class="point">
           <p>Expire date</p>
@@ -130,14 +132,14 @@
           </div>
           <div class="point">
           <p>CVC</p>
-          <input class="fill-in" class="CVC" type="number" name="XXX" placeholder="XXX" />
+          <input class="fill-in" class="CVC" type="number" name="XXX" placeholder="XXXX" />
         </div>
         <br>
         <div class="point">
-        <label for="visa">Visa</label>
-        <input class="dotts" type="radio" id="visa" name="payment_method" value="visa" />
-        <label for="vipps">Vipps</label>
-        <input class="dotts"type="radio" id="vipps" name="payment_method" value="vipps" />
+            <i class="fa-brands fa-cc-visa"></i>
+           <input class="dotts" type="radio" id="visa" name="payment_method" value="visa"/>
+           <img class="vipps" src="thumbnail-img/vipps_logo_rgb.png">
+           <input class="dotts"type="radio" id="vipps" name="payment_method" value="vipps" />
         </div>
     </form>
         <div class="point">
