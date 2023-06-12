@@ -340,7 +340,7 @@ img{
     border-radius: 1rem; 
     text-align:center;
     position:relative;
-    width:400px;
+    width:300px;
     align-self: auto;
     border-radius: 8px;
     border-left: 8px;
@@ -500,7 +500,7 @@ body.thank-you{
 /*media query*/
 
 @media (min-width:481px){
-   body .sizes, .about, .jackets, .contact{
+   body .carts, .about, .jackets, .contact .lightweight{
         flex-direction: column;
     
     }
