@@ -500,21 +500,21 @@ body.thank-you{
 /*media query*/
 
 @media (min-width:481px){
-   body .carts, .about, .jackets, .contact .lightweight{
+   body .cart, .about-page, .jackets-wrapper, .contact-wrapping, .contact-info,.light,.lightweight-wrapping,.product-card,.about-content,.thank-you-content,.product-and-content,.social-media-links,.phone-email-links,.sizes,.cart-checkout-wrapping .product-trash,.product-price,.product-description,.product-total-price,.point,.fill-in,.fa-brands.fa-cc-visa{
         flex-direction: column;
-    
+        flex-wrap: wrap;
     }
  }
 
 @media (min-width:768px){
-   body {
+  body .cart, .about-page, .jackets-wrapper, .contact-wrapping, .contact-info,.light,.lightweight-wrapping,.product-card,.about-content,.thank-you-content,.product-and-content,.social-media-links,.phone-email-links,.sizes,.cart-checkout-wrapping .product-trash,.product-price,.product-description,.product-total-price,.point,.fill-in,.fa-brands.fa-cc-visa{{
          flex-direction: column;
          width:100%;
      }
      }
 
 @media (max-width:1170px){
-    body{
+    body .cart, .about-page, .jackets-wrapper, .contact-wrapping, .contact-info,.light,.lightweight-wrapping,.product-card,.about-content,.thank-you-content,.product-and-content,.social-media-links,.phone-email-links,.sizes,.cart-checkout-wrapping .product-trash,.product-price,.product-description,.product-total-price,.point,.fill-in,.fa-brands.fa-cc-visa{{
         flex-direction:column;
     }
     }
