@@ -41,7 +41,7 @@ nav{
     color: #1c232d;
     text-decoration: none;
     text-align: center;
-    padding:20px 20px 20px 20px ;
+    padding:20px ;
     display: inline-block;
     display:-webkit-inline-box;
   
@@ -60,7 +60,7 @@ nav{
 }
 
 a:hover{
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     border-radius: 8px;
     border-color: #053541;
     background-color:#053541;
@@ -209,7 +209,7 @@ hr{
     color: #1c232d;
     display: block;
     text-decoration: none;
-    padding:20px 20px 20px 20px;
+    padding:20px;
    margin:0px 250px 40px 250px;
 
    align-self: center;
@@ -305,7 +305,7 @@ h3 {
     color: #1c232d;
     border-style: none;
     border-radius: 8px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px ;
     text-decoration: none;  
     
     
@@ -348,11 +348,30 @@ img{
     overflow-y: hidden;
     
 }
+.product-and-content{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+   
+}
 .product-image-cart{
-    width:150px;
+    flex: 1;
+    width:100px;
     height: 250px;
     padding-left: 20px;
-    margin-top: 90px;;
+    margin-top: 70px;
+    flex-wrap: wrap;
+
+}
+.product-image-cart-text p{
+    flex:1; 
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-right: 40px;
+   
+   
 }
 .cart hr{
     width: 500px;
@@ -361,18 +380,23 @@ img{
 
 .sizes{
     font-size: 25px;
-    color: #D3E3E3;
+    color:#D3E3E3;
     background-color: #053541;
     border-radius: 8px;
-   padding:10px 20px 10px 20px;
+    margin: 80px 70px ;
+    padding:10px 20px;
+    text-align: center;
+    font-size: 20px;
     text-align: center;
 }
 select{
     border: none;
+    font-size: 20px;
+
 }
 .product-trash{
     color: #053541;
-    font-size: 50px;
+    font-size: 80px;
     text-align: end;
     padding-right: 20px;
 }
@@ -395,6 +419,7 @@ select{
 .product-price{
     text-align: end;
     padding:40px 10px;
+    font-size: 40px;
 
 }
 .product-total-price{
@@ -474,17 +499,22 @@ body.thank-you{
 
 /*media query*/
 
-@media(max-width:1170px){
-body{
-    flex-direction:column;
-}
-}
+@media (min-width:481px){
+   body .sizes, .about, .jackets, .contact{
+        flex-direction: column;
+    
+    }
+ }
 
-
-@media(min-width:768px){
-    .lightweight-wrapping,.about-page,.thank-you{
+@media (min-width:768px){
+   body {
          flex-direction: column;
-         width: 100%;
+         width:100%;
      }
      }
- 
+
+@media (max-width:1170px){
+    body{
+        flex-direction:column;
+    }
+    }

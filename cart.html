@@ -33,13 +33,16 @@
     <h3>Cart & Checkout</h3>
     <section class="cart-checkout-wrapping">
       <div class="cart">
-        <img
-          class="product-image-cart"
-          src="../images/lightweight-woman.png"
-          alt="grey lightweight jacket for running and exercise fitted for woman"/>
-        
-          <p>current product description of selected product</p>
-       
+        <div class="product-and-content">
+            <div class="product-image-cart">
+            <img src="../images/lightweight-woman.png"
+          alt="grey lightweight jacket for running and exercise fitted for woman">
+        </div>
+         <div class="product-image-cart-text">
+          <p>current product description</p> 
+          <p>of selected product</p>
+        </div>
+    </div>
         <div class="sizes">
           <label >Size</label>
           <select name="Size">
@@ -138,12 +141,12 @@
         <div class="point">
             <i class="fa-brands fa-cc-visa"></i>
            <input class="dotts" type="radio" id="visa" name="payment_method" value="visa"/>
-           <img class="vipps" src="thumbnail-img/vipps_logo_rgb.png">
+           <img class="vipps" src="thumbnail-img/vipps_logo_rgb.png"alt="vipps logo for payment option">
            <input class="dotts"type="radio" id="vipps" name="payment_method" value="vipps" />
         </div>
     </form>
         <div class="point">
-        <button class="button-add">submit</button>
+        <button class="button-add" href="thank-you.html">submit</button>
        </div>
     </div> 
 </div> 
