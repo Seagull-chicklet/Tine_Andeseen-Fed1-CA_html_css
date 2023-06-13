@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Tine andersen" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tine andersen">
     <meta
       name="description"
-      content="get your rainydays clothing and accessorize. we provide you with durable and affordable clothing to keep you warm and dry for those rainydays"
-    />
+      content="get your rainydays clothing and accessorize. we provide you with durable and affordable clothing to keep you warm and dry for those rainydays">
     <title>Rainydays| Cart</title>
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/9c8dfe4908.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@400;500;700&family=Unica   +One&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@400;500;700&family=Unica   +One&display=swap">
   </head>
   <body>
     <nav class="header">
@@ -30,8 +26,8 @@
       <a href="contact.html" class="cta-button">Contact</a>
       <a href="cart.html" class="fa-solid fa-cart-shopping cta-button"></a>
     </nav>
-    <h3>Cart & Checkout</h3>
     <section class="cart-checkout-wrapping">
+    <h3>Cart & Checkout</h3>
       <div class="cart">
         <div class="product-and-content">
             <div class="product-image-cart">
@@ -46,7 +42,7 @@
         <div class="sizes">
           <label >Size</label>
           <select name="Size">
-            <option value=""> </option>
+            <option value=""> adjust?</option>
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
@@ -62,7 +58,7 @@
           <p>------ NOK</p>
         </div>
         <div class="product-description">
-          <button class="up-down"id="plus" >-</button>
+          <button class="up-down" id="plus" >-</button>
           <select name="Quantity">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -77,8 +73,7 @@
           </select>
           <button class="up-down" id="minus">+</button>
         </div>
-
-        <hr />
+        <hr>
         <div class="product-total-price">
           <p>total:</p>
         </div>
@@ -86,7 +81,6 @@
           <p>------ NOK</p>
         </div>
       </div>
-      
       <div class="cart">
         <div class="point">
         <p>checkout</p>
@@ -95,62 +89,54 @@
         <form action="form-success.php" method="post">
           <p>Name</p>
           <input class="fill-in"
-            class="Name"
             type="text"
-            name="full name"
+            name=" name"
             placeholder="Full name">
-        </div>
+             </div>
           <div class="point">
-            <form action="form-success.php" method="post">
           <p>Adress</p>
           <input class="fill-in"
-            class="Adress"
             type="text"
-            name="Full Adress"
+            name="Adressfield"
             placeholder="Full Adress">
           </div>
           <div class="point">
           <p>E-mail</p>
           <input class="fill-in"
-            class="e-mail"
             type="email"
-            name="e-mail adress"
+            name="e-mail-and-adress"
             placeholder="e-mail adress">
           </div>
           <div class="point">
           <p>Card number</p>
           <input class="fill-in"
-            class="Card number"
             type="number"
             name="XXXX XXXX XXXX XXXX"
-            placeholder="XXXX XXXX XXXX XXXX"/>
+            placeholder="XXXX XXXX XXXX XXXX">
           </div>
           <div class="point">
           <p>Expire date</p>
           <input class="fill-in"
-            class="Expire date"
             type="number"
-            name="XX/XX"
-            placeholder="XX/XX"/>
+            name="XX XX"
+            placeholder="XX XX">
           </div>
           <div class="point">
           <p>CVC</p>
-          <input class="fill-in" class="CVC" type="number" name="XXX" placeholder="XXX" />
-        </div>
-        <br>
+          <input class="fill-in" type="number" name="XXX" placeholder="XXX">
+          </div>
+          </form>
+          <br>
         <div class="point">
             <i class="fa-brands fa-cc-visa"></i>
-           <input class="dotts" type="radio" id="visa" name="payment_method" value="visa"/>
-           <img class="vipps" src="thumbnail-img/vipps_logo_rgb.png"alt="vipps logo for payment option">
-           <input class="dotts"type="radio" id="vipps" name="payment_method" value="vipps" />
+           <input class="dotts" type="radio" id="visa" name="payment_method" value="visa">
+           <img class="vipps" src="thumbnail-img/vipps_logo_rgb.png" alt="vipps logo for payment option">
+           <input class="dotts" type="radio" id="vipps" name="payment_method" value="vipps">
         </div>
-    </form>
         <div class="point">
-        <a  class="button-add" href="thank-you.html">submit</a>
+        <a class="button-add" href="thank-you.html">submit</a>
        </div>
     </div> 
-</div> 
-</div> 
     </section>
   </body>
 </html>

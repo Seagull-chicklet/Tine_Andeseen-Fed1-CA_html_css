@@ -500,16 +500,10 @@ body.thank-you{
 /*media query*/
 
 @media (min-width:481px){
-   body .cart, .about-page,  .contact-wrapping, .contact-info,.light,.lightweight-wrapping,.product-card,.about-content,.thank-you-content,.product-and-content,.social-media-links,.phone-email-links,.sizes,.cart-checkout-wrapping .product-trash,.product-price,.product-description,.product-total-price,.point,.fill-in,.fa-brands.fa-cc-visa{
+   body .cart,   .contact-wrapping, .contact-info,.light,.lightweight-wrapping,.product-card,.about-content,.thank-you-content,.product-and-content,.social-media-links,.phone-email-links,.sizes,.cart-checkout-wrapping .product-trash,.product-price,.product-description,.product-total-price,.point,.fill-in,.fa-brands.fa-cc-visa{
         flex-direction: column;
         flex-wrap: wrap;
     }
  }
-
-@media (min-width:768px){
-  body .cart, .about-page, .contact-wrapping, .contact-info,.light,.lightweight-wrapping,.product-card,.about-content,.thank-you-content,.product-and-content,.social-media-links,.phone-email-links,.sizes,.cart-checkout-wrapping .product-trash,.product-price,.product-description,.product-total-price,.point,.fill-in,.fa-brands.fa-cc-visa{
-        flex-direction: column;   
-     }
-     }
 
 
