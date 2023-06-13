@@ -75,7 +75,7 @@ h1{
     color: #D3E3E3;
     font-size: 60px;
     font-family: 'UnicaOne','Ubuntu','Sans-serif';
-    padding: 0px 200px;
+    padding: 0px 100px;
 
 }
 
@@ -85,7 +85,6 @@ h1{
     position: absolute;
     font-size: 30px;
     background-color: #D3E3E3;
-    background-size: cover;
     background:-webkit-linear-gradient(90deg,rgba(227,227,227,1) 0%,rgba(211,227,227,1) 35%, rgba(211,227,227,0) 100%);
     background-blend-mode: lighten;
     text-decoration: underline;
@@ -500,10 +499,31 @@ body.thank-you{
 /*media query*/
 
 @media (min-width:481px){
-   body .cart,   .contact-wrapping, .contact-info,.light,.lightweight-wrapping,.product-card,.about-content,.thank-you-content,.product-and-content,.social-media-links,.phone-email-links,.sizes,.cart-checkout-wrapping .product-trash,.product-price,.product-description,.product-total-price,.point,.fill-in,.fa-brands.fa-cc-visa{
+   body, h1 .cart,   .contact-wrapping, .contact-info,.light,.lightweight-wrapping,.product-card,.about-content,.thank-you-content,.product-and-content,.social-media-links,.phone-email-links,.sizes,.cart-checkout-wrapping .product-trash,.product-price,.product-description,.product-total-price,.point,.fill-in,.fa-brands.fa-cc-visa{
         flex-direction: column;
         flex-wrap: wrap;
+        overflow: hidden;
     }
  }
+@media(min-width:768px){
+    body{
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
 
-
+    }
+}
+@media( min-width:1024px){
+    body{
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+}
+@media(min-width:1200px){
+    body{
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+}
