@@ -244,7 +244,7 @@ hr{
 
 /*Lightweight*/
 
-h3 {
+.lightweight h3 {
     margin-top: 85px;
 }
 .lightweight-wrapping{
@@ -257,6 +257,7 @@ h3 {
 }
 
 .product-card{
+    flex:1;
     box-shadow: 0 2px 4px #1c232d;
     border-radius: 1rem; 
     text-align:center;
@@ -323,6 +324,33 @@ img{
 .light{
     flex:1;
 }
+/*Casual*/
+
+.casual-wrapping{
+    display:flex;
+    gap: 8px;
+    flex-wrap: wrap; 
+    margin-left: 8px;
+    margin-bottom: 10px;
+  
+}
+.casual h3{
+    margin-top: 85px;
+}
+.casual-product-card{
+    flex:1;
+    box-shadow: 0 2px 4px #1c232d;
+    border-radius: 1rem; 
+    text-align:center;
+    position:relative;
+    width:400px;
+    align-self: auto;
+}
+.reflect{
+    flex1;
+
+}
+
 
 
 /*cart & checkout*/
