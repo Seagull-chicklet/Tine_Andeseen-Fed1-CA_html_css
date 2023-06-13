@@ -502,14 +502,14 @@ body.thank-you{
    body, h1 .cart,   .contact-wrapping, .contact-info,.light,.lightweight-wrapping,.product-card,.about-content,.thank-you-content,.product-and-content,.social-media-links,.phone-email-links,.sizes,.cart-checkout-wrapping .product-trash,.product-price,.product-description,.product-total-price,.point,.fill-in,.fa-brands.fa-cc-visa{
         flex-direction: column;
         flex-wrap: wrap;
-        overflow: hidden;
+       overflow-x: hidden;
     }
  }
 @media(min-width:768px){
     body{
         flex-direction: column;
         flex-wrap: wrap;
-        overflow: hidden;
+        overflow-x: hidden;
 
     }
 }
@@ -517,13 +517,13 @@ body.thank-you{
     body{
         flex-direction: column;
         flex-wrap: wrap;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }
 @media(min-width:1200px){
     body{
         flex-direction: column;
         flex-wrap: wrap;
-        overflow: hidden;
+       overflow-x: hidden;
     }
 }
