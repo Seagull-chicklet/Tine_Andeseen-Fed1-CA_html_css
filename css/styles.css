@@ -5,9 +5,9 @@
 
 }
 body{
-     margin: 0;
+     display: ;
      font-family: 'UnicaOne','Ubuntu','Sans-serif';
-     overflow-x: hidden;
+ 
 }
 
 header{ 
@@ -19,22 +19,26 @@ header{
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-position:center bottom;
+     width: 100%;
 }
 
 nav{
-     font-size: 40px; 
+     font-size: 35px; 
      text-align: center;
      text-decoration: none;
-     background:(#D3E3E3);
      background:-webkit-linear-gradient(90deg,rgba(227,227,227,0) 0%,rgba(211,227,227,1) 35%, rgba(211,227,227,1) 100%);
      background-size: cover;
      color:#1c232d;
      width: 100%;
+     margin:0px;
      padding:10px 0px 40px 0px;
-     position:fixed;
-     top:0;
+     position:fixed ;
+     top:0px;
      z-index: 1; 
-     width: 100%;
+     right: 0px;
+     left: auto;
+     bottom: 769px;
+ 
 }
 
 .fa-cart-shopping{
@@ -99,6 +103,7 @@ h1{
 }
 #one,#two{
 margin-top: 0px;
+max-width: 100%;
 }
 
 h3 {
@@ -114,7 +119,7 @@ h3 {
     padding: 20px 0px 20px 50px; 
     margin-top: 0px; 
     text-align:center;
-    color:#1c232d
+    color:#1c232d;
     width: 100%;
 }
 
@@ -251,7 +256,7 @@ hr{
 
 /*Lightweight*/
 
-.lightweight, .casual h3{
+.lightweight, .casual, .cart h3{
     margin-top: 85px;
     margin-bottom: 0%;
 }
@@ -514,19 +519,19 @@ body.thank-you{
     color:#D3E3E3;
 }
 
-@media (min-widht:481px){
-    body, h3, .jacket, .about-content{
+@media (max-widht:481px){
+    .jackets-wrapper, .about-page, .cart, .contact-wrapping, .casual-wrapping, .cart-checkout-wrapping, .thank-you-content, .lightweight-wrapping{
         flex-direction: column;
         flex-wrap: wrap;
     }
 }
-@media(min-width:768px){
+@media(max-width:768px){
     body{
         flex-direction: column;
         flex-wrap: wrap;
     }
 }
-@media(min-width:1025px){
+@media(max-width:1025px){
     body{
         flex-direction: column;
         flex-wrap: wrap;
