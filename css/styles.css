@@ -72,7 +72,7 @@ h1{
     font-family: 'Unica+One';
     display: flex;
     position: absolute;
-    bottom:250px;
+    bottom:200px;
     color: #D3E3E3;
     font-size: 60px;
     font-family: 'UnicaOne','Ubuntu','Sans-serif';
@@ -137,13 +137,14 @@ p{
 
 .jackets-wrapper {
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap;
+  
 }
 .jacket {
-  display: flex;
+  flex:1;
   align-items: end;
 }
 
@@ -157,13 +158,15 @@ p{
     border-left: 50px;
     
 }
-.jacket a{
-    color: #1c232d;
-    display: flex;
+.jackets-list a{ 
+    flex:1;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
+    color: #1c232d;
+    height:100%;
 }
+
 .jacket a:hover{
     background-color: #053541;
     color: #D3E3E3;
@@ -180,7 +183,7 @@ hr{
     flex-wrap: wrap;
 }
 
-.about-content{ 
+.about-content, img{ 
    flex:1; 
 }
 
@@ -511,13 +514,21 @@ body.thank-you{
     color:#D3E3E3;
 }
 
-@media (min-widht:544px){
-    body{
+@media (min-widht:481px){
+    body, h3, .jacket, .about-content{
         flex-direction: column;
+        flex-wrap: wrap;
     }
 }
-@media(min-width:812px){
+@media(min-width:768px){
     body{
         flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media(min-width:1025px){
+    body{
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
