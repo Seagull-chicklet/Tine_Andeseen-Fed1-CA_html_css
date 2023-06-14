@@ -1,24 +1,24 @@
 /*Homepage*/
 @font-face {
-    font-family: 'Unica+One','Ubuntu','Sans-serif';
-    src: url("../fonts/Unica+One-Regular.ttf/../Ubuntu-Regular.ttf ");
+     font-family: 'Unica+One','Ubuntu','Sans-serif';
+     src: url("../fonts/Unica+One-Regular.ttf/../Ubuntu-Regular.ttf ");
 
 }
 body{
-    margin: 0;
-    font-family: 'UnicaOne','Ubuntu','Sans-serif';
-    overflow-x: hidden;
+     margin: 0;
+     font-family: 'UnicaOne','Ubuntu','Sans-serif';
+     overflow-x: hidden;
 }
 
 header{ 
-    display: flex;
-    background-image:url(../images/bergen-home.jpg);
-    background-size: cover;
-    height: 600px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position:center bottom;
+     display: flex;
+     background-image:url(../images/bergen-home.jpg);
+     background-size: cover;
+     height: 600px;
+     position: relative;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position:center bottom;
 }
 
 nav{
@@ -30,20 +30,21 @@ nav{
      background-size: cover;
      color:#1c232d;
      width: 100%;
-     padding:10px 10px 70px 10px;
+     padding:10px 0px 40px 0px;
      position:fixed;
      top:0;
      z-index: 1; 
+     width: 100%;
 }
 
 .fa-cart-shopping{
-    background-color: transparent;
-    color: #1c232d;
-    text-decoration: none;
-    text-align: center;
-    padding:20px ;
-    display: inline-block;
-    display:-webkit-inline-box;
+     background-color: transparent;
+     color: #1c232d;
+     text-decoration: none;
+     text-align: center;
+     padding:20px ;
+     display: inline-block;
+     display:-webkit-inline-box;
   
 }
  
@@ -75,28 +76,31 @@ h1{
     color: #D3E3E3;
     font-size: 60px;
     font-family: 'UnicaOne','Ubuntu','Sans-serif';
-    padding: 0px 100px;
+    padding: 30px 0px 60px 0px;
 
 }
 
  h2 {
      display: flex;
      flex-wrap: wrap;
-    position: absolute;
-    font-size: 30px;
-    background-color: #D3E3E3;
-    background:-webkit-linear-gradient(90deg,rgba(227,227,227,1) 0%,rgba(211,227,227,1) 35%, rgba(211,227,227,0) 100%);
-    background-blend-mode: lighten;
-    text-decoration: underline;
-    color:#1c232d;
-    padding: 70px 20px 20px 20px;
-    bottom: -30px;
-    width: 100%;
+     position: absolute;
+     font-size: 30px;
+     background-color: #D3E3E3;
+     background:-webkit-linear-gradient(90deg,rgba(227,227,227,1) 0%,rgba(211,227,227,1) 35%, rgba(211,227,227,0) 100%);
+     background-size: cover;
+     text-decoration: underline;
+     color:#1c232d;
+     padding: 70px 0px 30px 0px;
+     bottom: -30px;
+     width: 100%;
+    
+    
 
 }
 #one,#two{
 margin-top: 0px;
 }
+
 h3 {
     display: flex;
     flex-direction: column;
@@ -111,6 +115,7 @@ h3 {
     margin-top: 0px; 
     text-align:center;
     color:#1c232d
+    width: 100%;
 }
 
 p{
@@ -123,9 +128,9 @@ p{
 }
 
 .topic{
-    font-family: 'UnicaOne','Ubuntu','Sans-serif';
-    margin-bottom: 5%;
-    padding-left: 70px;
+ font-family: 'UnicaOne','Ubuntu','Sans-serif';
+ margin-bottom: 5%;
+ padding-left: 70px;
 }
 
 /*jackets*/
@@ -238,22 +243,23 @@ hr{
 }
 .social-media-links a:hover,.contact-info a:hover{
     color: #D3E3E3;
-    background-color: #053541;
-    
+    background-color: #053541; 
 }
 
 /*Lightweight*/
 
-.lightweight h3 {
+.lightweight, .casual h3{
     margin-top: 85px;
+    margin-bottom: 0%;
 }
-.lightweight-wrapping{
+.lightweight-wrapping, .casual-wrapping{
     display:flex;
     gap: 8px;
     flex-wrap: wrap; 
     margin-left: 8px;
+    margin-right: 8px;
     margin-bottom: 10px;
-  
+    
 }
 
 .product-card{
@@ -261,16 +267,11 @@ hr{
     box-shadow: 0 2px 4px #1c232d;
     border-radius: 1rem; 
     text-align:center;
-    position:relative;
-    width:400px;
+    width:250px;
     align-self: auto;
-   
+    max-height:100%
 }
-.product-image{
-    width:150px;
-    padding-left: 70px;
-   
-}
+
 
 .size-buttons {
     text-align: center;
@@ -294,64 +295,51 @@ hr{
     margin-top: 0px;
     font-size: 25px;
 }
+
 .price p{
     margin-top:  2px;
     margin-bottom: 0px;
     padding-bottom: opx;
-
 }
+
 .button-add{
     background-color: lightgray;
     color: #1c232d;
     border-style: none;
     border-radius: 8px;
     padding: 10px ;
+    margin: 10px 20px ;
     text-decoration: none;  
-    
-    
   }
 .button-add:hover{
     background-color: #053541;
     color: #D3E3E3;
 }
-img{
-   width: 100%;
-   height: 100%;
-   padding: 0%;
-   
 
-}
-.light{
+.light, .reflect{
     flex:1;
-}
-/*Casual*/
-
-.casual-wrapping{
-    display:flex;
-    gap: 8px;
-    flex-wrap: wrap; 
-    margin-left: 8px;
-    margin-bottom: 10px;
-  
-}
-.casual h3{
-    margin-top: 85px;
-}
-.casual-product-card{
-    flex:1;
-    box-shadow: 0 2px 4px #1c232d;
     border-radius: 1rem; 
     text-align:center;
-    position:relative;
-    width:400px;
+    max-width: 100%;
     align-self: auto;
-}
-.reflect{
-    flex1;
-
+    max-height:100%;
+    margin:0px 8px;
 }
 
 
+img{
+    width: 100%;
+    height: 100%;
+    margin:0px;
+}
+
+
+/*casual*/
+
+.yellow-jacket, .women-sport{
+    max-width: 100%;
+    max-height: 50%;
+}
 
 /*cart & checkout*/
 .cart-checkout-wrapping{
@@ -523,35 +511,13 @@ body.thank-you{
     color:#D3E3E3;
 }
 
-
-/*media query*/
-
-@media (min-width:481px){
-   body, h1 .cart,   .contact-wrapping, .contact-info,.light,.lightweight-wrapping,.product-card,.about-content,.thank-you-content,.product-and-content,.social-media-links,.phone-email-links,.sizes,.cart-checkout-wrapping .product-trash,.product-price,.product-description,.product-total-price,.point,.fill-in,.fa-brands.fa-cc-visa{
-        flex-direction: column;
-        flex-wrap: wrap;
-       overflow-x: hidden;
-    }
- }
-@media(min-width:768px){
+@media (min-widht:544px){
     body{
         flex-direction: column;
-        flex-wrap: wrap;
-        overflow-x: hidden;
-
     }
 }
-@media( min-width:1024px){
+@media(min-width:812px){
     body{
         flex-direction: column;
-        flex-wrap: wrap;
-        overflow-x: hidden;
-    }
-}
-@media(min-width:1200px){
-    body{
-        flex-direction: column;
-        flex-wrap: wrap;
-       overflow-x: hidden;
     }
 }
