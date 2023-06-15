@@ -277,11 +277,13 @@ hr{
 .product-card{
     flex:1;
     box-shadow: 0 2px 4px #1c232d;
+    box-sizing:borderbox;
     border-radius: 1rem; 
     text-align:center;
-    width:250px;
+    width:270px;
     align-self: auto;
-    max-height:100%
+    max-height:100%;
+    
 }
 
 
@@ -338,7 +340,9 @@ hr{
     max-height:100%;
     margin:0px 8px;
 }
-
+.women-sport{
+    max-height: 100%;
+}
 
 img{
     width: 100%;
