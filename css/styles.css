@@ -87,7 +87,7 @@ h1{
 
 }
 
- h2 {
+ .hero p {
      display: flex;
      flex-wrap: wrap;
      position: absolute;
@@ -109,7 +109,7 @@ margin-top: 0px;
 max-width: 100%;
 }
 
-h3 {
+h2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
