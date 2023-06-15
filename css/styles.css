@@ -4,8 +4,9 @@
      src: url("../fonts/Unica+One-Regular.ttf/../Ubuntu-Regular.ttf ");
 
 }
-body{
-     display: ;
+html, body{
+     max-width: 100%;
+     overflow-x: hidden;
      font-family: 'UnicaOne','Ubuntu','Sans-serif';
  
 }
@@ -31,7 +32,7 @@ nav{
      color:#1c232d;
      width: 100%;
      margin:0px;
-     padding:10px 0px 40px 0px;
+     padding:10px 0px 150px 0px;
      position:fixed ;
      top:0px;
      z-index: 1; 
@@ -128,8 +129,8 @@ p{
     font-size: 40px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 20px;
-    margin-bottom: 5%;
+    padding-bottom: 10px;
+    margin-bottom:8px;
 }
 
 .topic{
@@ -151,6 +152,7 @@ p{
 .jacket {
   flex:1;
   align-items: end;
+  max-height: 800px;
 }
 
 
@@ -181,6 +183,7 @@ hr{
     border: 3px solid lightgrey; 
 }
 
+
 /*about*/
 
 .about-page{
@@ -190,6 +193,7 @@ hr{
 
 .about-content, img{ 
    flex:1; 
+   max-height:fit-content;
 }
 
 
@@ -256,7 +260,7 @@ hr{
 
 /*Lightweight*/
 
-.lightweight, .casual, .cart h3{
+.lightweight, .casual, .cart-checkout h3{
     margin-top: 85px;
     margin-bottom: 0%;
 }
@@ -305,9 +309,10 @@ hr{
 }
 
 .price p{
-    margin-top:  2px;
-    margin-bottom: 0px;
-    padding-bottom: opx;
+    margin-top:  10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+   text-align: end;
 }
 
 .button-add{
@@ -316,7 +321,7 @@ hr{
     border-style: none;
     border-radius: 8px;
     padding: 10px ;
-    margin: 10px 20px ;
+    margin: 10px 20px 30px ;
     text-decoration: none;  
   }
 .button-add:hover{
@@ -348,7 +353,9 @@ img{
     max-width: 100%;
     max-height: 50%;
 }
-
+.product-card{
+    overflow-block:clip
+}
 /*cart & checkout*/
 .cart-checkout-wrapping{
     display: flex;
@@ -519,21 +526,3 @@ body.thank-you{
     color:#D3E3E3;
 }
 
-@media (max-widht:481px){
-    .jackets-wrapper, .about-page, .cart, .contact-wrapping, .casual-wrapping, .cart-checkout-wrapping, .thank-you-content, .lightweight-wrapping{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-}
-@media(max-width:768px){
-    body{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-}
-@media(max-width:1025px){
-    body{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-}
