@@ -87,7 +87,7 @@ h1{
 
 }
 
- .hero p {
+ .hero {
      display: flex;
      flex-wrap: wrap;
      position: absolute;
@@ -201,7 +201,7 @@ hr{
 
 /*Contact*/
 
-.contact h3{
+.contact h2{
    margin-top: 65px;
 }
 .contact-wrapping{
@@ -262,7 +262,7 @@ hr{
 
 /*Lightweight*/
 
-.lightweight, .casual, .cart-checkout h3{
+.lightweight, .casual, .cart-checkout h2{
     margin-top: 85px;
     margin-bottom: 0%;
 }
