@@ -13,6 +13,7 @@ html, body{
 
 header{ 
      display: flex;
+     flex-direction: column;
      background-image:url(../images/bergen-home.jpg);
      background-size: cover;
      height: 600px;
@@ -25,6 +26,8 @@ header{
 }
 
 nav{
+    display: flex;
+    flex-direction: row;
      font-size: 35px; 
      text-align: center;
      text-decoration: none;
@@ -143,6 +146,7 @@ p{
 }
 .jacket {
   flex:1;
+  flex-direction: column;
   align-items: end;
   max-height: 800px;
 }
@@ -159,6 +163,7 @@ p{
 }
 .jackets-list a{ 
     flex:1;
+    flex-direction: column;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -183,7 +188,7 @@ hr{
     flex-wrap: wrap;
 }
 
-.about-content, img{ 
+.about-content, .about-image{ 
    flex:1; 
    max-height:fit-content;
 }
@@ -204,6 +209,7 @@ hr{
 
 .contact-info{
     flex:1;
+    flex-direction: column;
     color: #1c232d;
     font-size: 2rem;
     text-decoration: none;
@@ -219,7 +225,6 @@ hr{
     text-decoration: none;
     padding:20px;
    margin:0px 250px 40px 250px;
-
    align-self: center;
    
 }
@@ -250,9 +255,9 @@ hr{
     background-color: #053541; 
 }
 
-/*Lightweight*/
+/*product pages contact cart*/
 
-.lightweight, .casual, .cart-checkout h2{
+.lightweight, .casual, .cart-checkout, .contact, .umbrella, .motorcycle, .mid-layer,  h1{
     margin-top: 85px;
     margin-bottom: 0%;
 }
@@ -269,7 +274,7 @@ hr{
 .product-card{
     flex:1;
     box-shadow: 0 2px 4px #1c232d;
-    box-sizing:borderbox;
+    box-sizing:border-box;
     border-radius: 1rem; 
     text-align:center;
     width:270px;
@@ -281,7 +286,7 @@ hr{
 
 .size-buttons {
     text-align: center;
-    padding: 10px 15px 10px 15px;
+    padding: 8px 10px 8px 10px;
     border-radius: 8px;
     border-style: none;
     background-color: lightgray;
@@ -325,6 +330,7 @@ hr{
 
 .light, .reflect{
     flex:1;
+    flex-direction: column;
     border-radius: 1rem; 
     text-align:center;
     max-width: 100%;
@@ -332,9 +338,7 @@ hr{
     max-height:100%;
     margin:0px 8px;
 }
-.women-sport{
-    max-height: 100%;
-}
+
 
 img{
     width: 100%;
@@ -362,6 +366,7 @@ img{
 }
 .cart{
     flex:1;
+    flex-direction: column;
     box-shadow: 0 2px 4px #1c232d;
     border-radius: 1rem; 
     text-align:center;
@@ -443,6 +448,8 @@ select{
     background-color: orange;
 }
 .product-price{
+    display: flex;
+    flex-direction: column;
     text-align: end;
     padding:40px 10px;
     font-size: 40px;
@@ -476,10 +483,14 @@ select{
     margin-bottom: 0px;
 }
 .fa-brands, .fa-cc-visa{
+    display: flex;
+    flex-direction: column;
 font-size: 40px;
 color: #053541;
 }
 .vipps{
+    display: flex;
+    flex-direction: column;
     width: 100px;
    border-top: 40px;
 }
@@ -497,8 +508,8 @@ body.thank-you{
     flex-direction: column;
 }
 
-.thank-you-content{
-    flex: content;
+.thank-you-content {
+    flex: 1;
     text-align: left;
     flex-wrap: wrap;
     margin-left: 150px;
@@ -521,4 +532,16 @@ body.thank-you{
     background-color: #053541;
     color:#D3E3E3;
 }
+/*media queries*/
 
+@media (min-width:400px){
+    .jacket,.jackets-list,.about-content,.about-image{
+        flex-direction: column;
+    }
+}
+@media (min-width: 600px){
+.jacket, .jackets-list, .about-content{
+    flex-direction: column;
+}
+}
+    
