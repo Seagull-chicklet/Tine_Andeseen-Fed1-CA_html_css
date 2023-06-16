@@ -74,7 +74,7 @@ a:hover{
     color: whitesmoke;
     text-align: center;
 }
-h1{
+.centered{
     font-family: 'Unica+One';
     display: flex;
     position: absolute;
