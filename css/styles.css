@@ -25,25 +25,25 @@ header{
 }
 
 nav{
-     font-size: 35px; 
-     text-align: center;
-     text-decoration: none;
      background:-webkit-linear-gradient(90deg,rgba(227,227,227,0) 0%,rgba(211,227,227,1) 35%, rgba(211,227,227,1) 100%);
      background-size: cover;
      color:#1c232d;
      width: 100%;
      margin:0px;
-     padding:10px 0px 150px 0px;
      position:fixed;
      top:0px;
      z-index: 1; 
      right: 0px;
      left: auto;
      bottom: 769px;
- 
+     padding:10px 0px 150px 0px;
+     justify-content: center;
+     display: inline-block;
+     font-size: 35px;
+     text-align: center; 
+    
 }
 
- 
 .cta-button{
     font-size: 25px;
     background-color: transparent;
@@ -185,7 +185,7 @@ hr{
     flex-wrap: wrap;
 }
 
-.about-content, .about-image{ 
+.about-text, .about-image{ 
    flex:1; 
    max-height:fit-content;
 }
