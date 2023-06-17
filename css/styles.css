@@ -71,7 +71,7 @@ a:hover{
     color: whitesmoke;
     text-align: center;
 }
-.centered{
+.centered p{
     font-family: 'Unica+One';
     display: flex;
     position: absolute;
@@ -568,10 +568,16 @@ body.thank-you{
     display:none;
    }
    #hamburger-menu{
-    display:none; 
+     display:none; 
+  }
+  i{
+     margin-top: 30px;
+     margin-left: 40px;
   }
 #hamburger-menu:checked ~ nav {
-display:block;
+     display:block;
+}
+
 }
 @media(max-width:416px){
     .fa-cc-visa,.vipps{
