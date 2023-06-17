@@ -585,7 +585,9 @@ body.thank-you{
     font-size: 10px;
     margin-top:0px;
 }
-
+ul{
+   margin-top: 0px; 
+}
 }
 @media(max-width:416px){
     .fa-cc-visa,.vipps{
