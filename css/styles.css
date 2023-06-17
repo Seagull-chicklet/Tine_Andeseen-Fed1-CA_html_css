@@ -6,6 +6,7 @@
 }
 html, body{
      max-width: 100%;
+     margin: 0px;
      overflow-x: hidden;
      font-family: 'UnicaOne','Ubuntu','Sans-serif';
  
@@ -37,11 +38,15 @@ nav{
      left: auto;
      bottom: 769px;
      padding:10px 0px 150px 0px;
-     justify-content: center;
-     display: inline-block;
+
+     display: inline;
      font-size: 35px;
      text-align: center; 
     
+}
+nav a{
+    text-decoration: none;
+    color: #1c232d;
 }
 
 .cta-button{
@@ -109,7 +114,7 @@ h1{
     background-size:cover;
     background-position:50% 30%;
     padding-left: 50%;
-    padding: 20px 0px 20px 50px; 
+    padding: 20px 0px 20px 20px; 
     margin-top: 0px; 
     text-align:center;
     color:#1c232d;
@@ -185,11 +190,14 @@ hr{
     flex-wrap: wrap;
 }
 
-.about-text, .about-image{ 
+.about-text  p{ 
    flex:1; 
-   max-height:fit-content;
+  flex-direction: column;
 }
-
+.about-image{
+    flex: 1;
+    flex-direction: column;
+}
 
 /*Contact*/
 
@@ -531,14 +539,23 @@ body.thank-you{
 }
 /*media queries*/
 
-@media (min-width:400px){
-    .jacket,.jackets-list,.about-content,.about-image{
-        flex-direction: column;
+@media (max-width: 300px){
+    .jackets-list, hr{
+        width:390px;
     }
 }
-@media (min-width: 600px){
-.jacket, .jackets-list, .about-content{
-    flex-direction: column;
+@media (max-width:400px){
+    .jacket,.jackets-list,.about-text,.about-image{
+        display: flex;
+       flex-direction: column;
+    }
+    .about-text,.jackets-list{
+        font-size: 25px;
+    }
+   
 }
+@media (max-width: 600px){
+.jacket, .about-image{
+    width: 100%;
 }
-    
+}   
