@@ -26,6 +26,8 @@ header{
 }
 
 nav{
+    display: flex;
+    flex-wrap: wrap;
      background:-webkit-linear-gradient(90deg,rgba(227,227,227,0) 0%,rgba(211,227,227,1) 35%, rgba(211,227,227,1) 100%);
      background-size: cover;
      color:#1c232d;
@@ -38,12 +40,12 @@ nav{
      left: auto;
      bottom: 769px;
      padding:10px 0px 150px 0px;
-
      display: inline;
      font-size: 35px;
      text-align: center; 
     
 }
+
 nav a{
     text-decoration: none;
     color: #1c232d;
@@ -110,7 +112,7 @@ h1{
     flex-wrap: wrap;
     font-family: 'Ubuntu','Sans-serif';
     font-size: 40px;
-    background-image:url("../images/rainyday\ pages-header.jpg");
+    background-image:url("../images/rainyday/pages-header.jpg");
     background-size:cover;
     background-position:50% 30%;
     padding-left: 50%;
@@ -185,17 +187,9 @@ hr{
 
 /*about*/
 
-.about-page{
+.about-page,.about-image,.about-text{
     display:flex;
     flex-wrap: wrap;
-}
-
-.about-text  p{ 
-   flex:1; 
-  flex-direction: column;
-}
-.about-image{
-    flex: 1;
     flex-direction: column;
 }
 
@@ -259,7 +253,7 @@ hr{
     margin-top: 85px;
     margin-bottom: 0%;
 }
-.lightweight-wrapping, .casual-wrapping, .mid-layer-wrapping, .motorcycle-wrapping, .umbrella-wrapping{
+.lightweight-wrapping, .casual-wrapping, .mid-layer-wrapping, .motorcycle-wrapping, .umbrella-wrapping,.cart-checkout-wrapping{
     display:flex;
     gap: 8px;
     flex-wrap: wrap; 
@@ -271,6 +265,7 @@ hr{
 
 .product-card{
     flex:1;
+    flex-wrap: wrap;
     box-shadow: 0 2px 4px #1c232d;
     box-sizing:border-box;
     border-radius: 1rem; 
@@ -481,15 +476,11 @@ select{
     margin-bottom: 0px;
 }
 .fa-brands, .fa-cc-visa{
-    display: flex;
-    flex-direction: column;
 font-size: 40px;
 color: #053541;
 }
 .vipps{
-    display: flex;
-    flex-direction: column;
-    width: 100px;
+    width: 90px;
    border-top: 40px;
 }
 /*Thank you*/
@@ -533,22 +524,59 @@ body.thank-you{
 /*media queries*/
 
 @media (max-width: 300px){
-    .jackets-list, hr{
+     hr{
         width:390px;
-    }
-}
-@media (max-width:400px){
-    .jacket,.jackets-list,.about-text,.about-image{
+    }   
+     .jacket,.jackets-list,.about-text,.about-image, .jackets-image{
         display: flex;
        flex-direction: column;
     }
-    .about-text,.jackets-list{
-        font-size: 25px;
+    .about-image,.jackets-list{
+        font-size: 50%;
+        flex:1;
     }
-   
+    .nav,.product-content a{
+      font-size: 50%;
+    }
+    .button-add, .size-buttons, .about-page, .about-image, .about-tex, .jackets-image{
+        flex-shrink: 1;
+    }
 }
-@media (max-width: 600px){
-.jacket, .about-image{
-    width: 100%;
+
+
+
+@media (max-width:400px){
+    .jacket,.jackets-list,.about-text,.about-image, .jackets-image{
+        display: flex;
+       flex-direction: column;
+    }
+    .about-image,.jackets-list{
+        font-size: 50%;
+        flex:1;
+    }
+    .nav,.product-content a{
+      font-size: 50%;
+    }
+    .button-add, .size-buttons, .about-page, .about-image, .about-tex, .jackets-image{
+        flex-shrink: 1;
+    }
+    hr{
+        width:390px;
+    }
+
+   nav{
+    display:none;
+   }
+   #hamburger-menu{
+    display:none; 
+  }
+#hamburger-menu:checked ~ nav {
+display:block;
 }
-}   
+@media(max-width:416px){
+    .fa-cc-visa,.vipps{
+        flex-wrap: wrap;
+    }
+}
+
+
