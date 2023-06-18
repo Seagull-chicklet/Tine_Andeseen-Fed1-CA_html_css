@@ -112,7 +112,7 @@ h1{
     flex-wrap: wrap;
     font-family: 'Ubuntu','Sans-serif';
     font-size: 40px;
-    background-image:url("../images/rainyday/pages-header.jpg");
+    background-image:url("../images/rainyday-pages-header.jpg");
     background-size:cover;
     background-position:50% 30%;
     padding-left: 50%;
@@ -121,6 +121,9 @@ h1{
     text-align:center;
     color:#1c232d;
     width: 100%;
+}
+h2{
+    font-size: 45px;
 }
 
 p{
@@ -187,10 +190,14 @@ hr{
 
 /*about*/
 
-.about-page,.about-image,.about-text{
+.about-page{
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+.about-image,.about-text{
+    flex:1;
+
 }
 
 /*Contact*/
@@ -541,6 +548,9 @@ body.thank-you{
     .button-add, .size-buttons, .about-page, .about-image, .about-tex, .jackets-image{
         flex-shrink: 1;
     }
+    .jackets-list{
+        display: block;
+    }
 }
 
 
@@ -557,7 +567,7 @@ body.thank-you{
     .nav,.product-content a{
       font-size: 50%;
     }
-    .button-add, .size-buttons, .about-page, .about-image, .about-tex, .jackets-image{
+    .button-add, .size-buttons,.sizes, .about-page, .about-image, .about-tex, .jackets-image{
         flex-shrink: 1;
     }
     hr{
@@ -584,10 +594,17 @@ body.thank-you{
 .menu a { 
     font-size: 10px;
     margin-top:0px;
+    line-height: 10px;
+
 }
 ul{
    margin-top: 0px; 
 }
+}
+@media(min-width:401px){
+    #hamburger-menu{
+        display:none; 
+     }
 }
 @media(max-width:416px){
     .fa-cc-visa,.vipps{
