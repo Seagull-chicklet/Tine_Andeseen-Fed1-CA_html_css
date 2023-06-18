@@ -256,8 +256,12 @@ hr{
 
 /*product pages contact cart*/
 
-.lightweight, .casual, .cart-checkout, .contact, .umbrella, .motorcycle, .mid-layer,  h1{
+.lightweight,.casual,.cart-checkout,.umbrella,.motorcycle,.mid-layer h1{
     margin-top: 85px;
+    margin-bottom: 0%;
+}
+.contact h1{
+    margin-top: 130px;
     margin-bottom: 0%;
 }
 .lightweight-wrapping, .casual-wrapping, .mid-layer-wrapping, .motorcycle-wrapping, .umbrella-wrapping,.cart-checkout-wrapping{
