@@ -538,9 +538,9 @@ body.thank-you{
         display: flex;
        flex-direction: column;
     }
-    .about-image,.jackets-list{
-        font-size: 50%;
+    .about-image,.about-tex,.jackets-image{
         flex:1;
+        justify-content: left;
     }
     .nav,.product-content a{
       font-size: 50%;
@@ -548,8 +548,11 @@ body.thank-you{
     .button-add, .size-buttons, .about-page, .about-image, .about-tex, .jackets-image{
         flex-shrink: 1;
     }
-    .jackets-list{
+    .jackets-list a {
         display: block;
+        font-size: 20px;
+        justify-content: left;
+        
     }
 }
 
