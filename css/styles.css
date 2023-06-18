@@ -64,7 +64,7 @@ nav a{
 }
 
 a:hover{
-    padding: 10px 20px;
+   
     border-radius: 8px;
     border-color: #053541;
     background-color:#053541;
@@ -260,7 +260,7 @@ hr{
     margin-top: 90px;
     margin-bottom: 0%;
 }
-.contact h1{
+.contact,.cart-checkout h1{
     margin-top: 130px;
     margin-bottom: 0%;
 }
