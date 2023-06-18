@@ -256,12 +256,12 @@ hr{
 
 /*product pages contact cart*/
 
-.lightweight,.casual,.cart-checkout,.umbrella,.motorcycle,.mid-layer h1{
+.lightweight,.casual,.umbrella,.motorcycle,.mid-layer h1{
     margin-top: 90px;
     margin-bottom: 0%;
 }
 .contact,.cart-checkout h1{
-    margin-top: 130px;
+    margin-top: 95px;
     margin-bottom: 0%;
 }
 .lightweight-wrapping, .casual-wrapping, .mid-layer-wrapping, .motorcycle-wrapping, .umbrella-wrapping,.cart-checkout-wrapping{
@@ -368,7 +368,7 @@ img{
     margin-left: 8px;
     margin-bottom: 10px;
 }
-.cart{
+.product-card{
     flex:1;
     flex-direction: column;
     box-shadow: 0 2px 4px #1c232d;
@@ -380,7 +380,7 @@ img{
     border-radius: 8px;
     border-left: 8px;
     align-items: center;
-    overflow-y: hidden;
+    height: 1000px
     
 }
 .product-and-content{
@@ -392,7 +392,7 @@ img{
 }
 .product-image-cart{
     flex: 1;
-    width:100px;
+   
     height: 250px;
     padding-left: 20px;
     margin-top: 70px;
@@ -401,16 +401,10 @@ img{
 }
 .product-image-cart-text p{
     flex:1; 
-    width: 100%;
+    
     flex-wrap: wrap;
     margin-top: 70px;
     margin-right: 40px;
-   
-   
-}
-.cart hr{
-    width: 500px;
-    border-color: #666768;
 }
 
 .sizes{
