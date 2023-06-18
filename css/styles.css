@@ -392,21 +392,27 @@ img{
 }
 .product-image-cart{
     flex: 1;
-   
     height: 250px;
     padding-left: 20px;
     margin-top: 70px;
     flex-wrap: wrap;
 
 }
-.product-image-cart-text p{
+.product-cart-text p{
     flex:1; 
-    
     flex-wrap: wrap;
     margin-top: 70px;
     margin-right: 40px;
+    font-size: 20px;
 }
-
+.product-adjust{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: end;
+}
+.sizes,.product-trash,.product-price{
+    flex: 1;
+}
 .sizes{
     font-size: 25px;
     color:#D3E3E3;
@@ -611,5 +617,4 @@ ul{
         flex-wrap: wrap;
     }
 }
-
 
