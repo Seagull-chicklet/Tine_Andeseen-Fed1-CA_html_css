@@ -410,16 +410,21 @@ img{
     flex-wrap: wrap;
     text-align: end;
 }
-.sizes,.product-trash,.product-price{
+.sizes,.product-trash,.product-price .quantity-adjust{
     flex: 1;
+    align-self:center;
 }
+.select,#plus.up-down,#minus.up-down{
+    justify-content: left;
+}
+
 .sizes{
     font-size: 25px;
     color:#D3E3E3;
     background-color: #053541;
     border-radius: 8px;
-    margin: 80px 70px ;
-    padding:10px 20px;
+    margin:auto;
+    padding:10px 10px;
     text-align: center;
     font-size: 20px;
     text-align: center;
