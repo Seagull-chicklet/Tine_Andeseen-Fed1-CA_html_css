@@ -38,7 +38,7 @@ nav{
      z-index: 1; 
      right: 0px;
      left: auto;
-     bottom: 769px;
+     bottom: 969px;
      padding:10px 0px 150px 0px;
      display: inline;
      font-size: 35px;
@@ -128,7 +128,7 @@ h2{
 
 p{
     font-family: 'UnicaOne','Ubuntu','Sans-serif';
-    font-size: 40px;
+    font-size: 25px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
