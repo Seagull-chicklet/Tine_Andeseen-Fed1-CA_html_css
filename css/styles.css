@@ -25,6 +25,7 @@ header{
      width: 100%;
 }
 
+
 nav{
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +72,7 @@ a:hover{
     color: whitesmoke;
     text-align: center;
 }
-.centered p{
+.centered  p{
     font-family: 'Unica+One';
     display: flex;
     position: absolute;
@@ -81,10 +82,11 @@ a:hover{
     font-weight: bolder;
     font-family: 'UnicaOne','Ubuntu','Sans-serif';
     padding: 30px 0px 60px 0px;
+    text-align: center;
 
 }
 
- .hero {
+ .hero{
      display: flex;
      flex-wrap: wrap;
      position: absolute;
@@ -97,9 +99,10 @@ a:hover{
      padding: 70px 0px 30px 0px;
      bottom: -30px;
      width: 100%;
-    
-    
+}
 
+.hero p{
+    font-size: 30px;
 }
 #one,#two{
 margin-top: 0px;
@@ -116,14 +119,14 @@ h1{
     background-size:cover;
     background-position:50% 30%;
     padding-left: 50%;
-    padding: 20px 0px 20px 20px; 
+    padding: 20px 0px 20px 160px; 
     margin-top: 0px; 
     text-align:center;
     color:#1c232d;
     width: 100%;
 }
 h2{
-    font-size: 35px;
+    font-size: 25px;
 }
 
 p{
@@ -308,7 +311,6 @@ hr{
     text-align: left;
     font-size: 15px;
     margin-top: 0px;
-    font-size: 25px;
 }
 
 .price p{
