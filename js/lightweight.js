@@ -34,3 +34,6 @@ async function fetchJackets(){
 }
 fetchJackets();
 
+for(let i = 0; i <products.description.length; i++ ){
+    console.log(products.description[i]);
+}
