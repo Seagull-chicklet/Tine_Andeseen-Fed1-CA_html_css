@@ -1,16 +1,13 @@
 const url = "https://api.noroff.dev/api/v1/rainy-days/";
 
-const productCard = document.querySelector(".product-card");
+const resultsWomens = document.querySelector(".product-card");
 
-async function fetchJackets() {
+async function fetch_jackets() {
   try {
     const response = await fetch(url);
     const results = await response.json();
 
-    // console.log(results);
-
     const jackets = results;
-    productCard.innerHTML = "";
 
     const products = [];
     for (let i = 0; i < jackets.length; i++) {
@@ -22,7 +19,7 @@ async function fetchJackets() {
   } catch (error) {
     console.log(error);
 
-    productCard.innerHTML = message("error", error);
+    resultsWomens.innerHTML = message("error", error);
   }
 }
-fetchJackets(url);
+fetch_jackets(url);

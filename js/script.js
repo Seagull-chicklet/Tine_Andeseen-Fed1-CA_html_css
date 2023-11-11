@@ -1,15 +1,59 @@
-// const baseUrl = "https://api.noroff.dev/api/v1/rainy-days/";
+const URL = "https://api.noroff.dev/api/v1/rainy-days/";
 
-// const resultsContainer = document.querySelector(".results");
+const jacket_function = async (url) => {
+  try {
+    const response = await fetch(url);
+    // console.log({ response });
 
-// async function getJackets(){
-//     try{
-//         const response = await fetch(url);
-//         const results = await response.json();
-//         console.log (results);
-//     }catch(error){
-//         console.log(error);
-//         resultsContainer.innerHTML = error 
-//     }
-// }
-// getJackets();
+    if (response.ok) {
+      const data = await response.json();
+      // console.log({ data });
+      return data;
+    } else {
+      throw new Error("We got issues, when reaching the server");
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+async function renderData() {
+  const data = await jacket_function(URL);
+  const container = document.querySelector("#cards");
+  container.innerHTML = "";
+
+  data.forEach((element) => {
+    const card = createCard(element);
+    container.append(card);
+  });
+
+  function createCard(element) {
+    const { id, title, description, image } = element;
+    if (!id || !title || !description) {
+      const errorMessage = new Error(
+        `invalid data detected. the data is ${JSON.stringify(element)}`
+      );
+      console.log(errorMessage);
+      return;
+    }
+    const divElement = document.createElement("div");
+    const h2Element = document.createElement("h2");
+    const pElement = document.createElement("p");
+    const h3Element = document.createElement("h3");
+    const imageElement = document.createElement("img");
+    imageElement.src = image;
+    imageElement.classList.add("product-image");
+    divElement.classList.add("product-card");
+    divElement.id = element.id;
+    divElement.addEventListener("click", () => {
+      window.location.href = `../chosen_product.html?id=${element.id}`;
+    });
+    h2Element.textContent = element.title;
+    pElement.textContent = element.description;
+    h3Element.textContent = element.price;
+    divElement.append(imageElement, h2Element, pElement, h3Element);
+    return divElement;
+  }
+}
+
+renderData();

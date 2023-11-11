@@ -15,7 +15,7 @@ header {
   display: flex;
   background-image: url(../images/bergen-home.jpg);
   background-size: cover;
-  height: 600px;
+  height: 400px;
   position: relative;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -42,7 +42,7 @@ nav {
   z-index: 1;
   right: 0px;
   left: auto;
-  bottom: 969px;
+  bottom: 1199px;
   padding: 10px 0px 150px 0px;
   display: inline;
   font-size: 35px;
@@ -289,6 +289,7 @@ hr {
   margin-left: 8px;
   margin-right: 8px;
   margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 .product-card {
@@ -298,9 +299,18 @@ hr {
   box-sizing: border-box;
   border-radius: 1rem;
   text-align: center;
-  width: 270px;
+  width: 50%;
   align-self: auto;
-  max-height: 100%;
+  height: 100%;
+}
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 .loader {
   border: 15px solid #d3e3e3;
@@ -313,7 +323,7 @@ hr {
 
 .size-buttons {
   text-align: center;
-  padding: 8px 10px 8px 10px;
+  padding: 8px 8px 8px 8px;
   border-radius: 8px;
   border-style: none;
   background-color: lightgray;
@@ -372,10 +382,10 @@ hr {
   margin: 8px;
 }
 
-.product-image img {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
+.product-image {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
 }
 
 /*casual*/
@@ -408,7 +418,7 @@ hr {
   border-radius: 8px;
   border-left: 8px;
   align-items: center;
-  height: 1000px;
+  height: 700px;
 }
 .product-and-content {
   display: flex;
