@@ -11,14 +11,14 @@ async function fetchOneProduct(id) {
   const url = `https://api.noroff.dev/api/v1/rainy-days/${id}`;
   try {
     const response = await fetch(url);
-    console.log({ response });
+    // console.log({ response });
 
     if (response.ok) {
       const data = await response.json();
-      console.log({ data });
+      // console.log({ data });
       return data;
     } else {
-      throw new Error("We got issues, when reaching the server");
+      throw new Error("We got issues, unexpected response");
     }
   } catch (error) {
     console.log(error);
@@ -26,7 +26,7 @@ async function fetchOneProduct(id) {
 }
 
 async function renderOneProduct() {
-  const id = params.get("ìd");
+  const id = params.get("id");
   const oneData = await fetchOneProduct(id);
   console.log({ oneData });
   const productDisplay = document.getElementById("cards");
