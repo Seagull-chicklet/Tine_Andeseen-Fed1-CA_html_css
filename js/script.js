@@ -27,6 +27,19 @@ async function renderData() {
     container.append(card);
   });
 
+  const greeting = document.querySelector(".greeting");
+
+  function changeGreeting() {
+    greeting.innerHTML = "Found it.";
+  }
+  setTimeout(changeGreeting, 4000);
+
+  const loading = document.querySelector(".loader");
+
+  setTimeout(function () {
+    loading.classList.remove("loading-indicator");
+  }, 3000);
+
   function createCard(element) {
     const { id, title, description, image } = element;
     if (!id || !title || !description) {
