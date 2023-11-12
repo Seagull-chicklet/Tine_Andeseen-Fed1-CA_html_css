@@ -32,13 +32,13 @@ async function renderData() {
   function changeGreeting() {
     greeting.innerHTML = "Found it.";
   }
-  setTimeout(changeGreeting, 4000);
+  setTimeout(changeGreeting, 3000);
 
   const loading = document.querySelector(".loader");
 
   setTimeout(function () {
     loading.classList.remove("loading-indicator");
-  }, 3000);
+  }, 1000);
 
   function createCard(element) {
     const { id, title, description, image } = element;
