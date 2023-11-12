@@ -3,11 +3,10 @@ const URL = "https://api.noroff.dev/api/v1/rainy-days/";
 const jacket_function = async (url) => {
   try {
     const response = await fetch(url);
-    // console.log({ response });
 
     if (response.ok) {
       const data = await response.json();
-      // console.log({ data });
+
       return data;
     } else {
       throw new Error("We got issues, when reaching the server");
